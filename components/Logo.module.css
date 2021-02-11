@@ -1,0 +1,13 @@
+.containerTitle {
+  margin-left: 10px;
+}
+
+
+
+.title:after {
+  content: '';
+  width: 74%;
+  height: 2px;
+  background: #072E25;
+  display: block;
+}

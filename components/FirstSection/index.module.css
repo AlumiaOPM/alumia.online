@@ -1,0 +1,69 @@
+.iluminismoFinanceiro {
+  z-index: 2;
+  position: relative;
+  background: url('/bg.jpg');
+  padding-top: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.iluminismoFinanceiro:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, #11323c 50%, transparent);
+  z-index: -1;
+}
+
+.sectionItem{
+  width: 50%;
+}
+
+.sectionItem:nth-child(2){
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+  width: 600px;
+  height: 450px;
+}
+
+.sectionItem p{
+  margin: 40px auto;
+}
+
+.sectionItem p,
+.sectionItem h2{
+  color: #333;
+}
+
+.containerActions {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 800px){
+  .iluminismoFinanceiro{
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .sectionItem{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sectionItem h2{
+    margin-top: 40px;
+  }
+
+  .sectionItem:nth-child(2){
+    margin-bottom: -8px;
+  }
+}

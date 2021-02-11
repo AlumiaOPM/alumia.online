@@ -1,0 +1,13 @@
+.depoimentos {
+  background: #11333D;
+  padding: 40px;
+  margin: 20px auto;
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin: 40px auto;
+  align-items: center;
+}
