@@ -13,7 +13,7 @@ export default function FirstSection() {
   const [open, setIsOpen] = React.useState(false);
 
   return (
-    <div className={styles.iluminismoFinanceiro}>
+    <div className={styles.firstSection}>
       <Container>
         <Section>
           <div className={styles.sectionItem}>

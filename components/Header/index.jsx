@@ -66,7 +66,7 @@ export default function Header(props) {
                   <ListItemIcon>
                     <MdHome />
                   </ListItemIcon>
-                  <ListItemText primary="Home"/>
+                  <ListItemText primary="O que fazemos"/>
                 </ListItem>
               </Link>
               <Link href="/">
@@ -74,15 +74,7 @@ export default function Header(props) {
                   <ListItemIcon>
                     <MdForum />
                   </ListItemIcon>
-                  <ListItemText primary="Consultorias" />
-                </ListItem>
-              </Link>
-              <Link href="/">
-                <ListItem button>
-                  <ListItemIcon>
-                    <MdNote />
-                  </ListItemIcon>
-                  <ListItemText primary="Artigos" />
+                  <ListItemText primary="Quem somos" />
                 </ListItem>
               </Link>
               <Link href="/">

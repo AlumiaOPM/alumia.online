@@ -52,11 +52,6 @@
 }
 
 @media screen and (max-width: 800px){
-  .item:nth-child(2):before{
-    content: '';
-    display: none;
-    width: 0%;
-  }
 
   .curiosidades {
     margin-top: 0px;
@@ -70,6 +65,7 @@
 
   .item {
     margin: 20px auto;
+    width: 100%;
   }
 
   .item p {
