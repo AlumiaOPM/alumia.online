@@ -12,13 +12,16 @@ const theme = createMuiTheme({
     }
   },
   typography: {
+    p: {
+      fontFamily: 'Roboto',
+    },
     fontFamily: [
-      'Hammersmith One', 
+      'Josefin Sans',
       'Roboto',
       'sans-serif'
-    ],
-  }
-})
+    ].join(','),
+  },
+});
 
 function MyApp({ Component, pageProps }) {
   return (

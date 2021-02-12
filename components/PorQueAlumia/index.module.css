@@ -51,6 +51,10 @@
   text-align: center;
 }
 
+.curiosidades p {
+  font-family: "Roboto";
+}
+
 @media screen and (max-width: 800px){
 
   .curiosidades {

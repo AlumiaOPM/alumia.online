@@ -54,10 +54,10 @@
 }
 
 .header .menuDesktop a {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: #F15A22;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   font-weight: 600;
 }

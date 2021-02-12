@@ -35,6 +35,11 @@
 
 .sectionItem p{
   margin: 40px auto;
+  font-family: "Roboto";
+}
+
+.sectionItem button {
+  font-family: "Roboto";
 }
 
 .sectionItem p,

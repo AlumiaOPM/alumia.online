@@ -42,15 +42,15 @@ export default function Header(props) {
           <div 
             className={`${styles.logo} ${isDrawerOpened ? styles.logoWorkAround : ''}`}
           >
-            <Link href={'/'}>
+            <Link href="/test">
               <Logo />
             </Link>
           </div>
           
           <div className={styles.menuDesktop}>
-            <a href="#">O que fazemos</a>
-            <a href="#">Quem somos</a>
-            <a href="#">Contato</a>
+            <Link href={"/teste"}>o que fazemos</Link>
+            <a href="#">quem somos</a>
+            <a href="#">contato</a>
           </div>
 
           <div className={styles.menu}>
@@ -66,7 +66,7 @@ export default function Header(props) {
                   <ListItemIcon>
                     <MdHome />
                   </ListItemIcon>
-                  <ListItemText primary="O que fazemos"/>
+                  <ListItemText primary="o que fazemos"/>
                 </ListItem>
               </Link>
               <Link href="/">
@@ -74,7 +74,7 @@ export default function Header(props) {
                   <ListItemIcon>
                     <MdForum />
                   </ListItemIcon>
-                  <ListItemText primary="Quem somos" />
+                  <ListItemText primary="quem somos" />
                 </ListItem>
               </Link>
               <Link href="/">
@@ -82,7 +82,7 @@ export default function Header(props) {
                   <ListItemIcon>
                     <MdPhone />
                   </ListItemIcon>
-                  <ListItemText primary="Contato" />
+                  <ListItemText primary="contato" />
                 </ListItem>
               </Link>
             </List>

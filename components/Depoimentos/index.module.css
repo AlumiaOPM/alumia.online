@@ -18,3 +18,7 @@
   margin: 40px auto;
   align-items: center;
 }
+
+.text p {
+  font-family: "Roboto";
+}
