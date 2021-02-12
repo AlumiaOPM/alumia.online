@@ -22,7 +22,11 @@ export default function FirstSection() {
               personalizados para sua instituição
               de ensino, sem custos.
             </Typography>
-            <Typography component="p"style={{color: '#f1f1f1'}}>
+            <Typography 
+              component="p"
+              style={{color: '#f1f1f1'}}
+              
+            >
               Conte com cursos digitais de alta qualidade no modelo <strong>OPM</strong> (online program management), incluindo captação de alunos para escalar seu EaD sem investimentos.
             </Typography>
             <div className={styles.containerActions}>

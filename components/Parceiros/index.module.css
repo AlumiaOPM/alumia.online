@@ -1,12 +1,13 @@
 .containerParceiros {
   display: block;
   text-align: center;
+  padding: 40px;
 }
 
 .containerParceiros h4{
   font-size: 2rem;
   font-weight: 600;
-  color: #333;
+  color: #11333D;
   margin: 20px auto;
 }
 
@@ -23,4 +24,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.containerParceiros .logos .item img {
+  width: 92%;
 }

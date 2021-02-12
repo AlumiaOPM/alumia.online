@@ -24,6 +24,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-right: 20px;
+  color: #11333D;
 }
 
 @media screen and (max-width: 800px){
