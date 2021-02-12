@@ -17,7 +17,10 @@ export default function FirstSection() {
       <Container>
         <Section>
           <div className={styles.sectionItem}>
-            <Typography component="h2" variant="h4" style={{fontWeight: '600'}} style={{color: "#f1f1f1", fontWeight: '800'}}>
+            <Typography 
+              component="h2" 
+              variant="h4" 
+              style={{color: "#f1f1f1", fontWeight: '800'}}>
               Criamos programas EaD exclusivos e
               personalizados para sua instituição
               de ensino, sem custos.
@@ -31,7 +34,18 @@ export default function FirstSection() {
             </Typography>
             <div className={styles.containerActions}>
               <Button onClick={() => setIsOpen(true)} variant="outlined" size="large" color="secondary" fullWidth >Saiba mais</Button>
-              <Button variant="contained" size="large" color="primary" fullWidth >Assista nosso vídeo</Button>
+              <Button variant="contained" size="large" color="primary" fullWidth >
+                <a 
+                  href="https://www.youtube.com/watch?v=REdgyelb2Jw" 
+                  target="_blank"
+                  style={{
+                    textDecoration: 'none',
+                    color: "#F5F1F9"
+                  }}
+                >
+                  Assista nosso vídeo
+                </a>
+              </Button>
             </div>
           </div>
 

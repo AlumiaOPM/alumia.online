@@ -1,0 +1,20 @@
+.criamosVersoesDigitais {
+  padding: 120px 0px 40px 0px;
+  text-align: center;
+  background: #FDFAFE;
+}
+
+.criamosVersoesDigitais h4 {
+  color: #11323c;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px){
+  .criamosVersoesDigitais h4 {
+    font-size: 1.6rem;
+  }
+
+  .text {
+    padding: 10px;
+  }
+}
