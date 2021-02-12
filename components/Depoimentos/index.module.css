@@ -4,6 +4,13 @@
   margin: 20px auto;
 }
 
+.depoimentos .title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px auto;
+}
+
 .testimonial {
   max-width: 800px;
   margin: 0 auto;

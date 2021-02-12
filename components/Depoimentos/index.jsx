@@ -48,8 +48,8 @@ export default function Depoimentos(props) {
           style={{ 
             backgroundColor: "#F15A22", 
             margin: "20px",
-            width: '100px',
-            height: "100px",
+            width: '80px',
+            height: "80px",
             fontSize: "30px"
           }}
           variant="circular"
@@ -63,6 +63,14 @@ export default function Depoimentos(props) {
   return (
     <div className={styles.depoimentos}>
       <Container>
+        <Typography 
+          component="h4" 
+          variant="h4" 
+          className={styles.title}
+          color="secondary"
+        >
+          Veja o que dizem sobre nós:
+        </Typography>
         <TestimonialCard
           name={"Antonieta Megale"}
           content={'" Nos ajudando sempre a pensar nas melhores possibilidades e soluções para levar cada vez mais qualidade para os nossos alunos. Muito obrigada Alumia!"'}

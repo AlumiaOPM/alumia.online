@@ -28,8 +28,13 @@ export default function Parceiros() {
             <div className={styles.item}>
               <img src="/parceiros/fecap.png" alt="FECAP" title="FECAP" />
             </div>
+
+          </div>
+
+          <div className={styles.logos}>
+
             <div className={styles.item}>
-              <img src="/parceiros/fat.webp" alt="Fundação FAT" title="Fundação FAT" />
+              <img src="/parceiros/fat.png" alt="Fundação FAT" title="Fundação FAT" />
             </div>
             <div className={styles.item}>
               <img src="/parceiros/ens.png" alt="ENS" title="ENS" />
@@ -37,8 +42,9 @@ export default function Parceiros() {
             <div className={styles.item}>
               <img src="/parceiros/sing.png" alt="Instituto Singularidades" title="Instituto Singularidades" />
             </div>
-            
+
           </div>
+
         </div>
       </Container>
     </div>

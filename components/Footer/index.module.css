@@ -1,5 +1,5 @@
 .footer {
-  background: #11333D;
+  background: #F5F1F9;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,11 +12,6 @@
   align-items: center;
   justify-content: center;
   margin: 40px auto;
-  color: #f1f1f1;
-}
-
-.logo h3 {
-  color: #f1f1f1;
 }
 
 .containerMedia {
@@ -28,7 +23,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #f1f1f1;
   padding-right: 20px;
 }
 

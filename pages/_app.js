@@ -13,8 +13,8 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      'Ubuntu',
-      '-apple-system'
+      'Hammersmith One', 
+      'sans-serif'
     ],
   }
 })

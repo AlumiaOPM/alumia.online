@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
 :root {
   --max-width: 1200px;
-  --font-family: 'Ubuntu', 'Arial', sans-serif;
+  --font-family: 'Hammersmith One', sans-serif;
 }
 
 * {

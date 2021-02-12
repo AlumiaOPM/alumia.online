@@ -13,13 +13,13 @@ export default function Footer() {
       </div>
       <div className={styles.containerMedia}>
         <div className={styles.media}>
-          <MdMail color="#f1f1f1" style={{ margin: '0px 6px 0px 0px' }} />
+          <MdMail color="primary" style={{ margin: '0px 6px 0px 0px' }} />
           <Typography component="small">
             contato@alumia.online
           </Typography>
         </div>
         <div className={styles.media}>
-          <FaWhatsapp color="#f1f1f1" style={{ margin: '0px 6px 0px 0px' }} />
+          <FaWhatsapp color="primary" style={{ margin: '0px 6px 0px 0px' }} />
           <Typography component="small">
             (11) 9-9999-9999
           </Typography>

@@ -26,7 +26,7 @@ export default function FirstSection() {
               Conte com cursos digitais de alta qualidade no modelo <strong>OPM</strong> (online program management), incluindo captação de alunos para escalar seu EaD sem investimentos.
             </Typography>
             <div className={styles.containerActions}>
-              <Button onClick={() => setIsOpen(true)} variant="text" size="large" color="secondary" fullWidth >Saiba mais</Button>
+              <Button onClick={() => setIsOpen(true)} variant="outlined" size="large" color="secondary" fullWidth >Saiba mais</Button>
               <Button variant="contained" size="large" color="primary" fullWidth >Assista nosso vídeo</Button>
             </div>
           </div>
