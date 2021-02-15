@@ -11,3 +11,10 @@
   width: 800px;
   z-index: 90;
 }
+
+@media screen and (max-width: 767px){
+  .successMessage {
+    left: 0px;
+    width: 100%;
+  }
+}
