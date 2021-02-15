@@ -1,20 +1,41 @@
 .criamosVersoesDigitais {
-  padding: 120px 0px 40px 0px;
-  text-align: center;
-  background: #FDFAFE;
+  padding-top: 100px;
 }
 
-.criamosVersoesDigitais h4 {
-  color: #11323c;
+.criamosVersoesDigitais p {
+  font-family: "Roboto";
+  margin: 10px 0px;
+  color: #333;
+}
+
+.criamosVersoesDigitais h5 {
   font-weight: 600;
+  font-size: 2rem;
+}
+
+.criamosVersoesDigitais h5:before {
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: #F15A22;
+  display: block;
+  margin: 14px 0px;
+}
+
+.criamosVersoesDigitais h6 {
+  font-size: 20px;
+  color: #333;
+  padding-right: 30%;
+  margin: 10px auto;
+}
+
+.criamosVersoesDigitais h6:last-child {
+  color: #F15A22;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px){
-  .criamosVersoesDigitais h4 {
-    font-size: 1.6rem;
-  }
-
-  .text {
-    padding: 10px;
+  .criamosVersoesDigitais {
+    padding: 100px 10px 0px 10px;
   }
 }
