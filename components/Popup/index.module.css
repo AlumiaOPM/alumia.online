@@ -3,3 +3,11 @@
   background-color: #F1F1F1;
   margin-top: -20px;
 }
+
+.successMessage {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 800px;
+  z-index: 90;
+}
