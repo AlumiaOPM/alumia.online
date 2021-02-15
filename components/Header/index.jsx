@@ -6,7 +6,7 @@ import {
   IconButton,
   List,
   ListItem,
-  ListItemIcon,
+  Button,
   ListItemText
 } from '@material-ui/core';
 import { Menu } from '@material-ui/icons';
@@ -50,6 +50,7 @@ export default function Header(props) {
           </div>
           
           <div className={styles.menuDesktop}>
+            <Link href="/">home</Link>
             <Link href={"/o-que-fazemos"}>o que fazemos</Link>
             <Link href={"/quem-somos"}>quem somos</Link>
             <a 
@@ -67,19 +68,24 @@ export default function Header(props) {
             <List className={styles.list}>
               <Link href="/">
                 <ListItem button>
-                  <ListItemText primary="home"/>
+                  <ListItemText primary="Home"/>
                 </ListItem>
               </Link>
               <Link href="/o-que-fazemos">
                 <ListItem button>
-                  <ListItemText primary="o que fazemos" />
+                  <ListItemText primary="O que fazemos" />
                 </ListItem>
               </Link>
-              <Link href="/">
+              <Link href="/quem-somos">
                 <ListItem button>
-                  <ListItemText primary="contato" />
+                  <ListItemText primary="Quem somos" />
                 </ListItem>
               </Link>
+              <a onClick={() => store.dispatch({type:"openPopup"})}>
+                <ListItem button>
+                  <ListItemText primary="Contato" />
+                </ListItem>
+              </a>
             </List>
           </Drawer>
         </Section>
