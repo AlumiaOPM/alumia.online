@@ -22,3 +22,21 @@
 .text p {
   font-family: "Roboto";
 }
+
+@media screen and (max-width: 800px){
+  .depoimentos {
+    padding: 40px 20px;
+  }
+
+  .testimonial {
+    flex-direction: column-reverse !important;
+  }
+
+  .text p {
+    text-align: center !important;
+  }
+
+  .text h5 {
+    text-align: center !important;
+  }
+}

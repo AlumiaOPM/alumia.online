@@ -24,7 +24,7 @@ export default function FirstSection() {
               style={{color: "#f1f1f1", fontWeight: '800'}}>
               Criamos programas EaD exclusivos e
               personalizados para sua instituição
-              de ensino, sem custos.
+              de ensino, <span style={{color: "#F15A22"}}>sem custos</span>.
             </Typography>
             <Typography 
               component="p"

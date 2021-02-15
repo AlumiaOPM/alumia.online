@@ -42,32 +42,21 @@ export default function Popup(props) {
     <Dialog open={isOpen} onClose={() => store.dispatch({ type: "closePopup" })}>
       <DialogTitle style={{ backgroundColor: '#f1f1f1' }}>Por favor preencha os campos abaixo:</DialogTitle>
       <div
+        onClick={() => store.dispatch({ type: "closePopup" })}
         style={{
           position: 'absolute',
           top: '20px',
           right: '20px',
           fontSize: '20px',
           color: '#072E25',
-          cursor: 'pointer'
+          cursor: 'pointer',
         }}
-        onClick={() => store.dispatch({ type: "closePopup" })}
       >
         <Close />
       </div>
       <div className={styles.popup} {...props}>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={0}>
-            <Grid item xs={12}>
-              <TextField
-                type="email"
-                label="E-mail"
-                fullWidth
-                variant="outlined"
-                margin="dense"
-                onChange={handleChange}
-                name="email"
-              />
-            </Grid>
             <Grid item xs={12}>
               <TextField
                 type="text"
@@ -77,6 +66,30 @@ export default function Popup(props) {
                 margin="dense"
                 onChange={handleChange}
                 name="fullname"
+              />
+            </Grid>
+            <Grid item xs={6}>
+              <TextField
+                type="text"
+                label="Nome da IES"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                onChange={handleChange}
+                style={{ marginRight: '6px' }}
+                name="ies_name"
+              />
+            </Grid>
+            <Grid item xs={6}>
+              <TextField
+                type="email"
+                label="E-mail"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                style={{ marginLeft: '6px' }}
+                onChange={handleChange}
+                name="email"
               />
             </Grid>
             <Grid item xs={6}>
@@ -101,6 +114,19 @@ export default function Popup(props) {
                 style={{ marginLeft: '8px' }}
                 onChange={handleChange}
                 name="phone"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField 
+                type="text"
+                label="Mensagem"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                onChange={handleChange}
+                multiline
+                rows={6}
+                name="message"
               />
             </Grid>
 

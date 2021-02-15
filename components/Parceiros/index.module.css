@@ -24,8 +24,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  -o-transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.item:hover {
+  transform: scale(1.1);
 }
 
 .containerParceiros .logos .item img {
   width: 92%;
+}
+
+@media screen and (max-width: 800px){
+  .containerParceiros {
+    padding: 10px;
+  }
+
+  .containerParceiros .logos .item {
+    width: 50%;
+    padding: 10px;
+  }
 }

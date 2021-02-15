@@ -20,6 +20,8 @@
 .item h4 {
   font-weight: 600;
   margin: 20px 0px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .item a {
@@ -64,7 +66,7 @@
   .flex{
     height: auto;
     flex-direction: column;
-    padding: 40px;
+    padding: 0px;
   }
 
   .item {
