@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import CriamosVersoesDigitais from '../components/CriamosVersoesDigitais';
 import OQueFazemos from '../components/OQueFazemos';
+import Popup from '../components/Popup';  
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <CriamosVersoesDigitais />
       <OQueFazemos />
+      <Popup />
       <Footer />
     </div>
   )

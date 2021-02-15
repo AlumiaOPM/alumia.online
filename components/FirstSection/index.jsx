@@ -2,15 +2,16 @@ import React from 'react';
 
 import Container from '../Container';
 import Section from '../Section';
-import Popup from '../Popup';
-import { Typography, Button, Dialog, DialogTitle } from '@material-ui/core';
+import { Typography, Button, } from '@material-ui/core';
 
-import {Close} from '@material-ui/icons';
+import store from '../../src/store';
 
 import styles from './index.module.css';
 
 export default function FirstSection() {
-  const [open, setIsOpen] = React.useState(false);
+  const handleClick = event => {
+    store.dispatch({type: "openPopup"})
+  }
 
   return (
     <div className={styles.firstSection}>
@@ -33,8 +34,12 @@ export default function FirstSection() {
               Conte com cursos digitais de alta qualidade no modelo <strong>OPM</strong> (online program management), incluindo captação de alunos para escalar seu EaD sem investimentos.
             </Typography>
             <div className={styles.containerActions}>
-              <Button onClick={() => setIsOpen(true)} variant="outlined" size="large" color="secondary" fullWidth >Saiba mais</Button>
-              <Button variant="contained" size="large" color="primary" fullWidth >
+              <Button 
+                variant="outlined" 
+                size="large" 
+                color="secondary"
+                fullWidth 
+              >
                 <a 
                   href="https://www.youtube.com/watch?v=REdgyelb2Jw" 
                   target="_blank"
@@ -46,6 +51,13 @@ export default function FirstSection() {
                   Assista nosso vídeo
                 </a>
               </Button>
+              <Button 
+                onClick={handleClick} 
+                variant="contained" 
+                size="large" 
+                color="primary"
+                fullWidth 
+              >Saiba mais</Button>
             </div>
           </div>
 
@@ -54,23 +66,6 @@ export default function FirstSection() {
           </div>
         </Section>
       </Container>
-      <Dialog open={open} onClose={() => setIsOpen(false)}>
-        <DialogTitle style={{ backgroundColor: '#f1f1f1' }}>Por favor preencha os campos abaixo:</DialogTitle>
-        <div 
-          style={{ 
-              position: 'absolute', 
-              top: '20px', 
-              right: '20px', 
-              fontSize: '20px', 
-              color: '#072E25', 
-              cursor: 'pointer' 
-            }} 
-          onClick={() => setIsOpen(false)}
-        >
-          <Close />
-        </div>
-        <Popup />
-      </Dialog>
     </div>
   )
 }

@@ -9,12 +9,15 @@ import {
   ListItemIcon,
   ListItemText
 } from '@material-ui/core';
-import { MdHome, MdForum, MdNote, MdPhone } from 'react-icons/md';
+import {  MdForum,  MdPhone } from 'react-icons/md';
 import { Menu } from '@material-ui/icons';
 
 import Container from '../Container';
 import Section from '../Section';
 import Logo from '../Logo';
+
+import store from '../../src/store';
+
 import styles from './index.module.css';
 
 export default function Header(props) {
@@ -50,7 +53,9 @@ export default function Header(props) {
           <div className={styles.menuDesktop}>
             <Link href={"/o-que-fazemos"}>o que fazemos</Link>
             <Link href={"/quem-somos"}>quem somos</Link>
-            <a href="#">contato</a>
+            <a 
+              onClick={() => store.dispatch({type:"openPopup"})}
+            >contato</a>
           </div>
 
           <div className={styles.menu}>

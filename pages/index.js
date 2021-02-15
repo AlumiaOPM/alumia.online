@@ -7,6 +7,7 @@ import PorQueAlumia from '../components/PorQueAlumia';
 import SuaIESOnline from '../components/SuaIESOnline';
 import Depoimentos from '../components/Depoimentos';
 import Parceiros from '../components/Parceiros';
+import Popup from '../components/Popup';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <SuaIESOnline />
       <Parceiros />
       <Depoimentos />
+      <Popup />
       <Footer />
     </div>
   )

@@ -12,10 +12,11 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
-
+ */
+ 
 img {
   position: relative;
   max-width: 100%;
