@@ -1,0 +1,29 @@
+.sobreAAlumia {
+  padding-top: 100px;
+}
+
+.sobreAAlumia p {
+  font-family: "Roboto";
+  margin: 10px 0px;
+  color: #333;
+}
+
+.sobreAAlumia h5 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.sobreAAlumia h5:before {
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: #F15A22;
+  display: block;
+  margin: 20px 0px;
+}
+
+@media screen and (max-width: 767px){
+  .sobreAAlumia {
+    padding: 100px 10px 0px 10px;
+  }
+}

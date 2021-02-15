@@ -48,11 +48,12 @@ export default function Depoimentos(props) {
           style={{ 
             backgroundColor: "#F15A22", 
             margin: "20px",
-            width: '80px',
-            height: "80px",
+            width: '90px',
+            height: "90px",
             fontSize: "30px"
           }}
           variant="circular"
+          src={props.image}
         >
           {firstLetter}
         </Avatar>
@@ -76,12 +77,14 @@ export default function Depoimentos(props) {
           content={'" Nos ajudando sempre a pensar nas melhores possibilidades e soluções para levar cada vez mais qualidade para os nossos alunos. Muito obrigada Alumia!"'}
           work={"Coordenadora Instituto Singularidades "}
           orientation={"reverse"}
+          image="/antonieta.png"
         />
         <TestimonialCard
           name={"Guto Grieco"}
           content={'" Trabalhar com a Alumia tem sido muito bom pela qualidade do atendimento, pelos valores éticos da companhia, pelo serviço completo que eles prestam e pelos resultados que nos ajudam a atingir. "'}
           work={"Head inovação ESPM"}
           orientation={"left"}
+          image="/guto.png"
         />
       </Container>
     </div>

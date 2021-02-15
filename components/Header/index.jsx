@@ -9,7 +9,6 @@ import {
   ListItemIcon,
   ListItemText
 } from '@material-ui/core';
-import {  MdForum,  MdPhone } from 'react-icons/md';
 import { Menu } from '@material-ui/icons';
 
 import Container from '../Container';
@@ -73,17 +72,11 @@ export default function Header(props) {
               </Link>
               <Link href="/o-que-fazemos">
                 <ListItem button>
-                  <ListItemIcon>
-                    <MdForum />
-                  </ListItemIcon>
                   <ListItemText primary="o que fazemos" />
                 </ListItem>
               </Link>
               <Link href="/">
                 <ListItem button>
-                  <ListItemIcon>
-                    <MdPhone />
-                  </ListItemIcon>
                   <ListItemText primary="contato" />
                 </ListItem>
               </Link>

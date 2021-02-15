@@ -63,6 +63,10 @@
     margin-top: 0px;
   }
 
+  .curiosidades h2 {
+    margin: 0px auto;
+  }
+
   .flex{
     height: auto;
     flex-direction: column;
