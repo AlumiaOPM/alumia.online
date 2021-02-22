@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Alumia | Quem somos</title>
-        <link rel="icon" href="favicon.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta name="format-detection" content="telephone=no"></meta>
       </Head>
 

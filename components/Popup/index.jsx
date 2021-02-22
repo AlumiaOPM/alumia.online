@@ -131,6 +131,7 @@ export default function Popup(props) {
                   margin="dense"
                   onChange={handleChange}
                   name="nome_completo"
+                  required
                 />
               </Grid>
               <Grid item xs={6}>
@@ -143,6 +144,7 @@ export default function Popup(props) {
                   onChange={handleChange}
                   style={{ marginRight: '6px' }}
                   name="company"
+                  required
                 />
               </Grid>
               <Grid item xs={6}>
@@ -155,6 +157,7 @@ export default function Popup(props) {
                   style={{ marginLeft: '6px' }}
                   onChange={handleChange}
                   name="email"
+                  required
                 />
               </Grid>
               <Grid item xs={6}>
@@ -167,6 +170,7 @@ export default function Popup(props) {
                   style={{ marginRight: '6px' }}
                   onChange={handleChange}
                   name="city"
+                  required
                 />
               </Grid>
               <Grid item xs={6}>
@@ -179,6 +183,7 @@ export default function Popup(props) {
                   style={{ marginLeft: '8px' }}
                   onChange={handleChange}
                   name="mobilephone"
+                  required
                 />
               </Grid>
               <Grid item xs={12}>
@@ -192,6 +197,7 @@ export default function Popup(props) {
                   multiline
                   rows={6}
                   name="mensagem"
+                  required
                 />
               </Grid>
 
