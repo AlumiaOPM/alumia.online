@@ -21,8 +21,9 @@ import { AlertTitle } from '@material-ui/lab';
 export default function Popup(props) {
   const [loading, setLoading] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
-  const [fields, setFields] = React.useState({})
+  const [failed, setFailed] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(store.getState());
+  const [fields, setFields] = React.useState({})
 
 
   store.subscribe(() => {
@@ -31,18 +32,70 @@ export default function Popup(props) {
 
   const handleChange = event => {
     const { name, value } = event.target;
-    setFields({ ...fields, [name]: event.target.value, service: { ...fields.service } })
+    setFields({ ...fields, [name]: value })
   }
 
   const handleSubmit = async event => {
     setLoading(true);
     event.preventDefault();
-    window.setTimeout(() => {
-      setSuccess(true);
-      event.target.reset();
-      store.dispatch({ type: "closePopup" })
-      return setLoading(false);
-    }, 1000)
+    const { nome_completo, city, company, email, mensagem, mobilephone } = fields;
+    const payload = {
+      "submittedAt": Date.now(),
+      "fields": [
+        {
+          "name": "nome_completo",
+          "value": nome_completo,
+        },
+        {
+          "name": "city",
+          "value": city,
+        },
+        {
+          "name": "company",
+          "value": company,
+        },
+        {
+          "name": "email",
+          "value": email,
+        },
+        {
+          "name": "mensagem",
+          "value": mensagem,
+        },
+        {
+          "name": "mobilephone",
+          "value": mobilephone,
+        }
+      ]
+    }
+
+    try {
+      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/ee38b1fd-e826-447a-942b-64e9c6ad30dc", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload),
+      })
+
+      if (response.ok) {
+        event.target.reset();
+        setLoading(false);
+        setSuccess(true)
+
+        return store.dispatch({ type: "closePopup" })
+      } else {
+        console.log(response)
+        setLoading(false);
+        setFailed(true);
+        return store.dispatch({ type: "closePopup" })
+      }
+    } catch (error) {
+      console.log(error)
+      setLoading(false);
+      setFailed(true);
+      return store.dispatch({ type: "closePopup" })
+    }
   }
 
   return (
@@ -77,7 +130,7 @@ export default function Popup(props) {
                   variant="outlined"
                   margin="dense"
                   onChange={handleChange}
-                  name="fullname"
+                  name="nome_completo"
                 />
               </Grid>
               <Grid item xs={6}>
@@ -89,7 +142,7 @@ export default function Popup(props) {
                   margin="dense"
                   onChange={handleChange}
                   style={{ marginRight: '6px' }}
-                  name="ies_name"
+                  name="company"
                 />
               </Grid>
               <Grid item xs={6}>
@@ -125,7 +178,7 @@ export default function Popup(props) {
                   margin="dense"
                   style={{ marginLeft: '8px' }}
                   onChange={handleChange}
-                  name="phone"
+                  name="mobilephone"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -138,7 +191,7 @@ export default function Popup(props) {
                   onChange={handleChange}
                   multiline
                   rows={6}
-                  name="message"
+                  name="mensagem"
                 />
               </Grid>
 
@@ -174,6 +227,27 @@ export default function Popup(props) {
         >
           <AlertTitle>Sucesso!</AlertTitle>
           Formulário enviado com sucesso! Em breve entraremos em contato.
+        </Alert>
+      </Collapse>
+
+      <Collapse in={failed} className={styles.failedMessage}>
+        <Alert
+          severity="error"
+          action={
+            <IconButton
+              aria-label="close"
+              color="inherit"
+              size="large"
+              onClick={() => {
+                setFailed(false);
+              }}
+            >
+              <Close fontSize="inherit" />
+            </IconButton>
+          }
+        >
+          <AlertTitle>Erro!</AlertTitle>
+          Desculpe, houve um erro. Tente novamente.
         </Alert>
       </Collapse>
     </>

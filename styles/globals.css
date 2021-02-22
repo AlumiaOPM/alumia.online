@@ -4,6 +4,7 @@
 :root {
   --max-width: 1200px;
   --font-family: 'Josefin Sans', sans-serif;
+  --secondary-color: #11333D;
 }
 
 * {

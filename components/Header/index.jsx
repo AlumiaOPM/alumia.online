@@ -22,10 +22,6 @@ export default function Header(props) {
   const [isDrawerOpened, setIsDrawerOpened] = React.useState(false);
   const [isHeaderSmall, setIfIsHeaderSmall] = React.useState(false);
 
-  React.useEffect(() => {
-    console.log(window.location)
-  }, [])
-
   return (
     <div
       className={`${styles.header} ${styles.smallHeader}`}

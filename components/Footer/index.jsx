@@ -18,12 +18,6 @@ export default function Footer() {
             contato@alumia.online
           </Typography>
         </div>
-        <div className={styles.media}>
-          <FaWhatsapp color="primary" style={{ margin: '0px 6px 0px 0px' }} />
-          <Typography component="p">
-            (11) 9-9999-9999
-          </Typography>
-        </div>
       </div>
     </div>
   )
