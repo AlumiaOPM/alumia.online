@@ -40,27 +40,31 @@ export default function Popup(props) {
     window.setTimeout(() => {
       setSuccess(true);
       event.target.reset();
-      store.dispatch({type: "closePopup"})
+      store.dispatch({ type: "closePopup" })
       return setLoading(false);
     }, 1000)
   }
 
   return (
     <>
-      <Dialog open={isOpen} onClose={() => store.dispatch({ type: "closePopup" })}>
-        <DialogTitle style={{ backgroundColor: '#f1f1f1' }}>Por favor preencha os campos abaixo:</DialogTitle>
+      <Dialog open={isOpen} /* onClose={() => store.dispatch({ type: "closePopup" })} */>
+        <DialogTitle style={{ backgroundColor: '#f1f1f1' }} className={styles.dialogTitle}>
+          Por favor preencha os campos abaixo:
+        </DialogTitle>
         <div
           onClick={() => store.dispatch({ type: "closePopup" })}
           style={{
             position: 'absolute',
-            top: '20px',
-            right: '20px',
+            top: '6px',
+            right: '6px',
             fontSize: '20px',
             color: '#072E25',
             cursor: 'pointer',
           }}
         >
-          <Close />
+          <IconButton>
+            <Close />
+          </IconButton>
         </div>
         <div className={styles.popup} {...props}>
           <form onSubmit={handleSubmit}>

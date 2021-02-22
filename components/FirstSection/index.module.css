@@ -57,6 +57,12 @@
   margin-right: 20px;
 }
 
+.video {
+  background: #f1f1f1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 800px){
   .firstSection {
     padding-bottom: 20px;

@@ -73,7 +73,8 @@
   bottom: -4px;
 }
 
-.header .menuDesktop a:hover:after {
+.header .menuDesktop a:hover:after,
+.header .menuDesktop a.underlined:after {
   width: 100%;
 }
 

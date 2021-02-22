@@ -33,7 +33,7 @@ export default function SobreAAlumia() {
         <Section
           title="Nossa filosofia"
           content={[
-            "O foco na experiência do usuário é a nossa prioridade. Os alunos anseiam por Instituições de Ensino que se modernizem - rapidamente adaptem suas operações para proporcionar conveniência e adequação a um novo modelo de vida e de sociedade. É possível usar a EaD como ferramenta para atingir esse objetivo, com conteúdo de qualidade e alcance nacional.",
+            "O foco na experiência do usuário é a nossa prioridade. Os alunos anseiam por Instituições de Ensino que se modernizem e rapidamente adaptem suas operações para proporcionar conveniência e adequação a um novo modelo de vida e de sociedade. É possível usar a EaD como ferramenta para atingir esse objetivo, com conteúdo de qualidade e alcance nacional.",
           ]}
           image="/nossa-filosofia.png"
         />

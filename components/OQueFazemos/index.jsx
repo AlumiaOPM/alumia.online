@@ -47,7 +47,7 @@ export default function OQueFazemos() {
           />
           <Card
             title={"Gestão do ambiente virtual de aprendizagem"}
-            content={"Configuramos a sala de auladigital e fazemos a gestão do conteúdo no AVA (Ambiente Virtual de Aprendizagem), para deixá-lo intuitivo, seguro e estável."}
+            content={"Configuramos a sala de aula digital e fazemos a gestão do conteúdo no AVA (Ambiente Virtual de Aprendizagem), para deixá-lo intuitivo, seguro e estável."}
             action
           />
         </div>
@@ -65,7 +65,7 @@ export default function OQueFazemos() {
           />
           <Card
             title={<div>Sucesso do aluno</div>}
-            content={"Configuramos a sala de auladigital e fazemos a gestão do conteúdo no AVA (Ambiente Virtual de Aprendizagem), para deixá-lo intuitivo, seguro e estável."}
+            content={"Configuramos a sala de aula digital e fazemos a gestão do conteúdo no AVA (Ambiente Virtual de Aprendizagem), para deixá-lo intuitivo, seguro e estável."}
             action
           />
         </div>

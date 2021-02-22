@@ -4,6 +4,16 @@
   margin-top: -20px;
 }
 
+.popup label,
+.dialogTitle h2,
+.popup button {
+  font-family: "Roboto";
+}
+
+.dialogTitle h2 {
+  color: #333;
+}
+
 .successMessage {
   position: fixed;
   bottom: 20px;

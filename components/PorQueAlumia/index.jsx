@@ -20,7 +20,7 @@ export default function PorQueAlumia() {
               Transformação <br></br>digital
             </Typography>
             <Typography component="p">
-              A alumia atualiza sua marca para o mundo digital. Fazemos uma reavaliação 360º de seus programas de ensino com foco no modelo online. Ajudamos a melhorar a experiência digital do seu aluno, de forma personalizada e exclusiva, alinhada à estratégia de sua instituição.
+              A Alumia atualiza sua marca para o mundo digital. Fazemos uma reavaliação 360º de seus programas de ensino com foco no modelo online. Ajudamos a melhorar a experiência digital do seu aluno, de forma personalizada e exclusiva, alinhada à estratégia de sua instituição.
             </Typography>
           </div>
 
@@ -43,7 +43,7 @@ export default function PorQueAlumia() {
               Alta performance na <br></br>captação de alunos
             </Typography>
             <Typography component="p">
-              Especialidade em novos formatos de marketing de performance permite crescimento acelerado e escalável
+              Especialidade em novos formatos de marketing de performance permite crescimento acelerado e escalável.
             </Typography>
           </div>
 

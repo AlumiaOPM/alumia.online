@@ -6,7 +6,6 @@ import {
   IconButton,
   List,
   ListItem,
-  Button,
   ListItemText
 } from '@material-ui/core';
 import { Menu } from '@material-ui/icons';
@@ -24,37 +23,33 @@ export default function Header(props) {
   const [isHeaderSmall, setIfIsHeaderSmall] = React.useState(false);
 
   React.useEffect(() => {
-    window.onscroll = function(){
-      if(window.pageYOffset > 100){
-        return setIfIsHeaderSmall(true)
-      }else if (window.pageYOffset < 100){
-        return setIfIsHeaderSmall(false)
-      }
-
-      return;
-    }
+    console.log(window.location)
   }, [])
 
   return (
     <div
       className={`${styles.header} ${styles.smallHeader}`}
-      >
+    >
       <Container className={styles.container}>
         <Section className={styles.section}>
-          <div 
+          <div
             className={`${styles.logo} ${isDrawerOpened ? styles.logoWorkAround : ''}`}
           >
             <Link href="/">
               <a><Logo /></a>
             </Link>
           </div>
-          
+
           <div className={styles.menuDesktop}>
             <Link href="/">home</Link>
-            <Link href={"/o-que-fazemos"}>o que fazemos</Link>
-            <Link href={"/quem-somos"}>quem somos</Link>
-            <a 
-              onClick={() => store.dispatch({type:"openPopup"})}
+            <Link href={"/o-que-fazemos"}>
+                o que fazemos
+            </Link>
+            <Link href={"/quem-somos"}>
+                quem somos
+            </Link>
+            <a
+              onClick={() => store.dispatch({ type: "openPopup" })}
             >contato</a>
           </div>
 
@@ -68,7 +63,7 @@ export default function Header(props) {
             <List className={styles.list}>
               <Link href="/">
                 <ListItem button>
-                  <ListItemText primary="Home"/>
+                  <ListItemText primary="Home" />
                 </ListItem>
               </Link>
               <Link href="/o-que-fazemos">
@@ -81,7 +76,7 @@ export default function Header(props) {
                   <ListItemText primary="Quem somos" />
                 </ListItem>
               </Link>
-              <a onClick={() => store.dispatch({type:"openPopup"})}>
+              <a onClick={() => store.dispatch({ type: "openPopup" })}>
                 <ListItem button>
                   <ListItemText primary="Contato" />
                 </ListItem>
