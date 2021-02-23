@@ -24,7 +24,11 @@ export default function Popup(props) {
   const [failed, setFailed] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(store.getState());
   const [fields, setFields] = React.useState({})
+  const [isPageFullyLoaded, setisPageFullyLoaded] = React.useState(false);
 
+  React.useEffect(() => {
+    window.onload = () => setisPageFullyLoaded(true)
+  }, [])
 
   store.subscribe(() => {
     setIsOpen(!isOpen)
@@ -100,7 +104,7 @@ export default function Popup(props) {
 
   return (
     <>
-      <Dialog open={isOpen} /* onClose={() => store.dispatch({ type: "closePopup" })} */>
+      <Dialog open={isOpen}>
         <DialogTitle style={{ backgroundColor: '#f1f1f1' }} className={styles.dialogTitle}>
           Por favor preencha os campos abaixo:
         </DialogTitle>
@@ -216,7 +220,7 @@ export default function Popup(props) {
         </div>
       </Dialog>
 
-      <Collapse in={success} className={styles.successMessage}>
+      {isPageFullyLoaded && <Collapse in={success} className={styles.successMessage} >
         <Alert
           action={
             <IconButton
@@ -227,16 +231,16 @@ export default function Popup(props) {
                 setSuccess(false);
               }}
             >
-              <Close fontSize="inherit" />
+              <Close fontSize="inherit"/>
             </IconButton>
           }
         >
           <AlertTitle>Sucesso!</AlertTitle>
           Formulário enviado com sucesso! Em breve entraremos em contato.
         </Alert>
-      </Collapse>
+      </Collapse>}
 
-      <Collapse in={failed} className={styles.failedMessage}>
+      {isPageFullyLoaded && <Collapse in={failed} className={styles.failedMessage}>
         <Alert
           severity="error"
           action={
@@ -255,7 +259,7 @@ export default function Popup(props) {
           <AlertTitle>Erro!</AlertTitle>
           Desculpe, houve um erro. Tente novamente.
         </Alert>
-      </Collapse>
+      </Collapse>}
     </>
   )
 }
