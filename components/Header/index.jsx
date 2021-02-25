@@ -39,11 +39,15 @@ export default function Header(props) {
           <div className={styles.menuDesktop}>
             <Link href="/">home</Link>
             <Link href={"/o-que-fazemos"}>
-                o que fazemos
+              o que fazemos
             </Link>
             <Link href={"/quem-somos"}>
-                quem somos
+              quem somos
             </Link>
+            <a
+              href="https://jobs.kenoby.com/alumia"
+              target="_blank"
+            >trabalhe conosco</a>
             <a
               onClick={() => store.dispatch({ type: "openPopup" })}
             >contato</a>
@@ -72,6 +76,18 @@ export default function Header(props) {
                   <ListItemText primary="Quem somos" />
                 </ListItem>
               </Link>
+              <a 
+                href="https://jobs.kenoby.com/alumia" 
+                target="_blank" 
+                style={{
+                  textDecoration:'none',
+                  color: '#333'
+                }}
+              >
+                <ListItem button>
+                  <ListItemText primary="Trabalhe conosco" />
+                </ListItem>
+              </a>
               <a onClick={() => store.dispatch({ type: "openPopup" })}>
                 <ListItem button>
                   <ListItemText primary="Contato" />
