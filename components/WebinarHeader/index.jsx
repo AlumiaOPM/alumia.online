@@ -1,15 +1,15 @@
 import React from 'react';
 
-import {  TextField,  Grid,  Button,  Dialog,  DialogTitle,  CircularProgress,  Collapse,  IconButton} from '@material-ui/core';
+import Container from '../Container';
+import Section from '../Section';
+import {  TextField,  Grid,  Button,  Typography,  DialogTitle,  CircularProgress,  Collapse,  IconButton} from '@material-ui/core';
 import Alert from '@material-ui/lab/Alert';
 import { Close } from '@material-ui/icons';
-
 import store from '../../src/store';
-
-import styles from './index.module.css';
 import { AlertTitle } from '@material-ui/lab';
+import styles from './index.module.css';
 
-export default function Popup(props) {
+export default function FirstSection() {
   const [loading, setLoading] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
   const [failed, setFailed] = React.useState(false);
@@ -21,9 +21,6 @@ export default function Popup(props) {
     window.onload = () => setisPageFullyLoaded(true)
   }, [])
 
-  store.subscribe(() => {
-    setIsOpen(!isOpen)
-  })
 
   const handleChange = event => {
     const { name, value } = event.target;
@@ -33,7 +30,7 @@ export default function Popup(props) {
   const handleSubmit = async event => {
     setLoading(true);
     event.preventDefault();
-    const { nome_completo, city, company, email, mensagem, mobilephone } = fields;
+    const { nome_completo,  email, mobilephone } = fields;
     const payload = {
       "submittedAt": Date.now(),
       "fields": [
@@ -42,20 +39,8 @@ export default function Popup(props) {
           "value": nome_completo,
         },
         {
-          "name": "city",
-          "value": city,
-        },
-        {
-          "name": "company",
-          "value": company,
-        },
-        {
           "name": "email",
           "value": email,
-        },
-        {
-          "name": "mensagem",
-          "value": mensagem,
         },
         {
           "name": "mobilephone",
@@ -65,7 +50,7 @@ export default function Popup(props) {
     }
 
     try {
-      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/ee38b1fd-e826-447a-942b-64e9c6ad30dc", {
+      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/df425ee5-2a7c-4471-bcab-8e4858de22df", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
@@ -94,27 +79,25 @@ export default function Popup(props) {
   }
 
   return (
-    <>
-      <Dialog open={isOpen}>
-        <DialogTitle style={{ backgroundColor: '#f1f1f1' }} className={styles.dialogTitle}>
-          Por favor preencha os campos abaixo:
-        </DialogTitle>
-        <div
-          onClick={() => store.dispatch({ type: "closePopup" })}
-          style={{
-            position: 'absolute',
-            top: '6px',
-            right: '6px',
-            fontSize: '20px',
-            color: '#072E25',
-            cursor: 'pointer',
-          }}
-        >
-          <IconButton>
-            <Close />
-          </IconButton>
-        </div>
-        <div className={styles.popup} {...props}>
+    <div className={styles.webnarHeader}>
+      <Container>
+        <Section>
+          <div className={styles.sectionItem}>
+            <Typography
+              component="h2"
+              variant="h4"
+              style={{ color: "#f1f1f1", fontWeight: '800' }}>
+              [ WEBINAR ] <br/> Como Escalar Rapidamente um Programa <span style={{ color: "#F15A22" }}>EAD</span>
+            </Typography>
+            <Typography
+              component="p"
+              style={{ color: '#f1f1f1' }}>
+              Nós estamos vivendo a transformação digital. O ambiente online é o futuro e, ainda mais, a educação online é o futuro. Venha entender com a gente como!
+            </Typography>
+            
+          </div>
+
+          <div className={styles.sectionForms}>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={0}>
               <Grid item xs={12}>
@@ -129,73 +112,31 @@ export default function Popup(props) {
                   required
                 />
               </Grid>
-              <Grid item xs={6}>
-                <TextField
-                  type="text"
-                  label="Nome da IES"
-                  fullWidth
-                  variant="outlined"
-                  margin="dense"
-                  onChange={handleChange}
-                  style={{ marginRight: '6px' }}
-                  name="company"
-                  required
-                />
-              </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12}>
                 <TextField
                   type="email"
                   label="E-mail"
                   fullWidth
                   variant="outlined"
                   margin="dense"
-                  style={{ marginLeft: '6px' }}
                   onChange={handleChange}
                   name="email"
-                  required
-                />
-              </Grid>
-              <Grid item xs={6}>
-                <TextField
-                  type="text"
-                  label="Cidade"
-                  fullWidth
-                  variant="outlined"
-                  margin="dense"
-                  style={{ marginRight: '6px' }}
-                  onChange={handleChange}
-                  name="city"
-                  required
-                />
-              </Grid>
-              <Grid item xs={6}>
-                <TextField
-                  type="text"
-                  label="Telefone"
-                  fullWidth
-                  variant="outlined"
-                  margin="dense"
-                  style={{ marginLeft: '8px' }}
-                  onChange={handleChange}
-                  name="mobilephone"
                   required
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
                   type="text"
-                  label="Mensagem"
+                  label="Telefone"
                   fullWidth
                   variant="outlined"
                   margin="dense"
                   onChange={handleChange}
-                  multiline
-                  rows={6}
-                  name="mensagem"
+                  name="mobilephone"
                   required
                 />
               </Grid>
-
+              
               <Grid item xs={12} style={{ margin: '10px auto' }}>
                 <Button disabled={loading} color="primary" type="submit" variant="contained" fullWidth style={{ position: 'relative' }}>ENVIAR
               {loading && <CircularProgress size={24} style={{
@@ -206,10 +147,11 @@ export default function Popup(props) {
               </Grid>
 
             </Grid>
-
           </form>
-        </div>
-      </Dialog>
+          </div>
+        </Section>
+
+      </Container>
 
       {isPageFullyLoaded && <Collapse in={success} className={styles.successMessage} >
         <Alert
@@ -251,6 +193,6 @@ export default function Popup(props) {
           Desculpe, houve um erro. Tente novamente.
         </Alert>
       </Collapse>}
-    </>
+    </div>
   )
 }

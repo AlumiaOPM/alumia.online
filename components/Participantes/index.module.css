@@ -1,0 +1,60 @@
+.participantes {
+  background: url('/bg-oquefazemos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.participantes:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #11323c;
+  opacity: .9;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.card {
+  margin: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card p {
+  font-family: "Roboto";
+}
+
+.card button {
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 767px){
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  .card p {
+    margin: 20px auto;
+  }
+}

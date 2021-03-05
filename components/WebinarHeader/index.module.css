@@ -1,0 +1,92 @@
+.webnarHeader {
+  z-index: 2;
+  position: relative;
+  background: url('/bg.jpg');
+  padding:20px;
+  padding-top: 100px;
+  background-size: 64%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.webnarHeader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(50deg, #1a4b5a, #1a5a4f);
+  z-index: -1;
+}
+
+.sectionItem{
+  width: 50%;
+}
+
+.sectionItem p{
+  margin: 40px auto;
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 800px){
+  .firstSection {
+    padding-bottom: 20px;
+  }
+
+  .firstSection:after {
+    background: #11323c;
+  }
+
+  .sectionItem{
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .sectionItem h2{
+    margin-top: 0px;
+  }
+}
+
+/*Forms*/
+.sectionForms{
+  padding: 0 30px;
+  width: 50%;
+}
+
+.sectionForms label,
+.dialogTitle h2,
+.sectionForms button {
+  font-family: "Roboto";
+}
+
+.sectionForms input, .sectionForms textarea{
+  color: #f1f1f1;
+}
+.sectionForms fieldset{
+ border-color: #f1f1f173;
+}
+.sectionForms input:placeholder {
+  border-color: #fff;
+}
+.successMessage,
+.failedMessage {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 800px;
+  z-index: 90;
+}
+
+@media screen and (max-width: 767px){
+  .successMessage {
+    left: 0px;
+    width: 100%;
+  }
+}
+
