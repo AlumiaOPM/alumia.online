@@ -37,6 +37,6 @@ img {
 .tankyou h5, .tankyou h6{
   padding-bottom: 2rem;
 }
-.tankyou h1, .tankyou h2{
-  padding-bottom: 3rem;
+.tankyou h2, .tankyou h3{
+  padding-top: 3rem;
 }

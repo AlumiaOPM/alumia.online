@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useRouter } from 'next/router'
 import Container from '../Container';
 import Section from '../Section';
 import {  TextField,  Grid,  Button,  Typography,  DialogTitle,  CircularProgress,  Collapse,  IconButton} from '@material-ui/core';
@@ -8,6 +8,7 @@ import { Close } from '@material-ui/icons';
 import store from '../../src/store';
 import { AlertTitle } from '@material-ui/lab';
 import styles from './index.module.css';
+import { redirect } from 'next/dist/next-server/server/api-utils';
 
 export default function FirstSection() {
   const [loading, setLoading] = React.useState(false);
@@ -16,7 +17,7 @@ export default function FirstSection() {
   const [isOpen, setIsOpen] = React.useState(store.getState());
   const [fields, setFields] = React.useState({})
   const [isPageFullyLoaded, setisPageFullyLoaded] = React.useState(false);
-
+  const router = useRouter();
   React.useEffect(() => {
     window.onload = () => setisPageFullyLoaded(true)
   }, [])
@@ -53,7 +54,7 @@ export default function FirstSection() {
       ]
     }
 
-    try {
+    try {                                                                                       
       const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/df425ee5-2a7c-4471-bcab-8e4858de22df", {
         method: "post",
         headers: {
@@ -65,9 +66,9 @@ export default function FirstSection() {
       if (response.ok) {
         event.target.reset();
         setLoading(false);
-        setSuccess(true)
-
-        return store.dispatch({ type: "closePopup" })
+        setSuccess(true);
+        store.dispatch({ type: "closePopup" });
+        return router.push('https://f.hubspotusercontent00.net/hubfs/6331207/webinar%20alumia%20V2%20-%20c%C3%B3pia%202.pdf');
       } else {
         console.log(response)
         setLoading(false);
