@@ -102,17 +102,12 @@ export default function FirstSection() {
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Nós estamos vivendo a transformação digital. O ambiente online é o futuro e, ainda mais, a educação online é o futuro. Venha entender com a gente como!
+              Quer baixar a apresentação? Preencha o formulário ao lado.
             </Typography>
             
           </div>
 
           <div className={styles.sectionForms}>
-          <Typography
-              component="h4"
-              style={{ color: '#f1f1f1' }}>
-              Quer baixar a apresentação? <br/>Preencha o formulário:
-            </Typography>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={0}>
               <Grid item xs={12}>
