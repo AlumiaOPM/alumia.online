@@ -23,3 +23,20 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+.tankyou{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  padding: 0 10%;
+  text-align: center;
+  background: linear-gradient(50deg, #1a4b5a, #1a5a4f);
+}
+.tankyou h5, .tankyou h6{
+  padding-bottom: 2rem;
+}
+.tankyou h1, .tankyou h2{
+  padding-bottom: 3rem;
+}

@@ -90,3 +90,11 @@
   }
 }
 
+@media screen and (max-width: 425px){
+  .sectionForms{
+    width: 100%;
+  }
+  .webnarHeader {
+    height: auto;
+  }
+}

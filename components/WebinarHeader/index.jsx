@@ -30,13 +30,17 @@ export default function FirstSection() {
   const handleSubmit = async event => {
     setLoading(true);
     event.preventDefault();
-    const { nome_completo,  email, mobilephone } = fields;
+    const { nome_completo, cargo, email, mobilephone } = fields;
     const payload = {
       "submittedAt": Date.now(),
       "fields": [
         {
           "name": "nome_completo",
           "value": nome_completo,
+        },
+        {
+          "name": "cargo",
+          "value": cargo,
         },
         {
           "name": "email",
@@ -90,6 +94,12 @@ export default function FirstSection() {
               [ WEBINAR ] <br/> Como Escalar Rapidamente um Programa <span style={{ color: "#F15A22" }}>EAD</span>
             </Typography>
             <Typography
+              component="h3"
+              variant="h5"
+              style={{ color: "#f1f1f1", fontWeight: '800' }}>
+              <br/>Dia: <span style={{ color: "#F15A22" }}>16/03</span> às <span style={{ color: "#F15A22" }}>15hrs</span>
+            </Typography>
+            <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
               Nós estamos vivendo a transformação digital. O ambiente online é o futuro e, ainda mais, a educação online é o futuro. Venha entender com a gente como!
@@ -98,6 +108,11 @@ export default function FirstSection() {
           </div>
 
           <div className={styles.sectionForms}>
+          <Typography
+              component="p"
+              style={{ color: '#f1f1f1' }}>
+              Quer baixar a apresentação? <br/>Preencha o formulário:
+            </Typography>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={0}>
               <Grid item xs={12}>
@@ -121,6 +136,18 @@ export default function FirstSection() {
                   margin="dense"
                   onChange={handleChange}
                   name="email"
+                  required
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  type="cargo"
+                  label="Cargo"
+                  fullWidth
+                  variant="outlined"
+                  margin="dense"
+                  onChange={handleChange}
+                  name="cargo"
                   required
                 />
               </Grid>
