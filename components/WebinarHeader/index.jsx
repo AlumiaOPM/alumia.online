@@ -109,7 +109,7 @@ export default function FirstSection() {
 
           <div className={styles.sectionForms}>
           <Typography
-              component="p"
+              component="h5"
               style={{ color: '#f1f1f1' }}>
               Quer baixar a apresentação? <br/>Preencha o formulário:
             </Typography>
