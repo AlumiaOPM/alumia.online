@@ -96,11 +96,6 @@ export default function FirstSection() {
             <Typography
               component="h3"
               variant="h5"
-              style={{ color: "#f1f1f1", fontWeight: '800' }}>
-              <br/>Dia: <span style={{ color: "#F15A22" }}>16/03</span> às <span style={{ color: "#F15A22" }}>15hrs</span>
-            </Typography>
-            <Typography
-              component="p"
               style={{ color: '#f1f1f1' }}>
               Quer baixar a apresentação? Preencha o formulário ao lado.
             </Typography>
