@@ -2,13 +2,12 @@ import React from 'react';
 import { useRouter } from 'next/router'
 import Container from '../Container';
 import Section from '../Section';
-import {  TextField,  Grid,  Button,  Typography,  DialogTitle,  CircularProgress,  Collapse,  IconButton} from '@material-ui/core';
+import {  TextField,  Grid,  Button,  Typography,  CircularProgress,  Collapse,  IconButton} from '@material-ui/core';
 import Alert from '@material-ui/lab/Alert';
 import { Close } from '@material-ui/icons';
 import store from '../../src/store';
 import { AlertTitle } from '@material-ui/lab';
 import styles from './index.module.css';
-import { redirect } from 'next/dist/next-server/server/api-utils';
 
 export default function FirstSection() {
   const [loading, setLoading] = React.useState(false);
