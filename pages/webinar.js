@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:description" content="Basta fazer uma rápida pesquisa na internet que vemos como o EAD está crescendo mais que..." />
         <meta property="twitter:title" content="O Mercado EAD em Números" />
         <meta property="twitter:description" content="Basta fazer uma rápida pesquisa na internet que vemos como o EAD está crescendo mais que..." />
-        <meta property="twitter:image" content="https://alumia.online/webinar_tumbnail.png"></meta>
+        <meta property="twitter:image" content="https://alumia.online/tumb.png"></meta>
 
 
       </Head>
