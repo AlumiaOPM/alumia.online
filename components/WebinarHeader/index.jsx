@@ -94,6 +94,12 @@ export default function FirstSection() {
               [ WEBINAR ] <br/> O Mercado <span style={{ color: "#F15A22" }}>EAD</span> em Números
             </Typography>
             <Typography
+              component="h3"
+              variant="h5"
+              style={{ color: "#f1f1f1", fontWeight: '800' }}>
+              Data: <span style={{ color: "#F15A22" }}>13/04</span> <br/>Horário: <span style={{ color: "#F15A22" }}>15:00</span>
+            </Typography>
+            <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
               Nosso webinar "O Mercado EAD em Números" irá apresentar os cursos mais vendidos nesse ramo, os principais players, faturamentos estimados e te mostrar todo o potencial de crescimento dentro deste mercado. Você não pode perder!
