@@ -12,8 +12,8 @@ export default function OQueFazemos() {
       <Avatar
         style={{
           margin: "20px 0",
-          width: '90px',
-          height: "90px",
+          width: '150px',
+          height: "150px",
           fontSize: "30px"
         }}
         variant="circular"
