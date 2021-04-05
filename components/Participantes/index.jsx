@@ -49,9 +49,9 @@ export default function OQueFazemos() {
         </Typography>
         <div className={styles.cards}>
           <Card
-            image="/antonio.jpg"
-            title={"Antonio Álvaro"}
-            content={"Diretor de Educação e Inovação"}
+            image="/PauloPresse.jpg"
+            title={"Paulo Presse"}
+            content={"Coordenador da área de Estudos de Mercado da Hoper Educação"}
           />
           <Card
             image="/cibele.png"
