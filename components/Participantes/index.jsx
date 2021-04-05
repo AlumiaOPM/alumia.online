@@ -49,7 +49,7 @@ export default function OQueFazemos() {
         </Typography>
         <div className={styles.cards}>
           <Card
-            image="/PauloPresse.jpg"
+            image="/Paulo.png"
             title={"Paulo Presse"}
             content={"Coordenador da área de Estudos de Mercado da Hoper Educação"}
           />

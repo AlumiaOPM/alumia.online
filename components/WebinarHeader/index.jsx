@@ -67,7 +67,7 @@ export default function FirstSection() {
         setLoading(false);
         setSuccess(true);
         store.dispatch({ type: "closePopup" });
-        //return router.push('https://f.hubspotusercontent00.net/hubfs/6331207/webinar%20alumia%20V2%20-%20c%C3%B3pia%202.pdf');
+        return router.push('https://alumia.online/obrigado');
       } else {
         console.log(response)
         setLoading(false);
