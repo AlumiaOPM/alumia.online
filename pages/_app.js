@@ -1,6 +1,9 @@
-import '../styles/globals.css';
 import {ThemeProvider} from '@material-ui/styles';
 import {createMuiTheme} from '@material-ui/core';
+
+import LGPDDrawer from '../components/LGPDDrawer';
+
+import '../styles/globals.css';
 
 const theme = createMuiTheme({
   palette: {
@@ -27,6 +30,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
+      <LGPDDrawer />
     </ThemeProvider>
   )
 }

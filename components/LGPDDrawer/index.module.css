@@ -1,0 +1,53 @@
+.lgpdDrawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 16px 10px;
+  background: #FDFAFE;
+  box-shadow: -20px 10px 20px 10px rgba(0,0,0,.3);
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.flexSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexItem:first-child {
+  width: 90%;
+}
+
+.flexItem:last-child {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexItem p {
+  line-height: 22px;
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 767px){
+  .flexSection {
+    flex-direction: column;
+  }
+
+  .flexItem:first-child,
+  .flexItem:last-child {
+    width: 100%;
+  }
+
+  .flexItem:last-child {
+    margin: 10px auto 0px auto;
+  }
+
+  .flexItem:last-child button {
+    width: 100%;
+    padding: 10px;
+  }
+}
