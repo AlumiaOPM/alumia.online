@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Head from 'next/head';
 import Link from 'next/link';
 import {
   Drawer,
@@ -23,9 +23,15 @@ export default function Header(props) {
   const [isHeaderSmall, setIfIsHeaderSmall] = React.useState(false);
 
   return (
+    
+
     <div
       className={`${styles.header} ${styles.smallHeader}`}
     >
+      <Head>
+      <meta name="google-site-verification" content="VGbDos_WLuRkjHnorNOzJQLns4yHVdKp0fPEo1p2U0E" />
+      </Head>
+
       <Container className={styles.container}>
         <Section className={styles.section}>
           <div

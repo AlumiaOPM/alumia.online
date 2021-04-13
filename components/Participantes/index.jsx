@@ -12,8 +12,8 @@ export default function OQueFazemos() {
       <Avatar
         style={{
           margin: "20px 0",
-          width: '90px',
-          height: "90px",
+          width: '150px',
+          height: "150px",
           fontSize: "30px"
         }}
         variant="circular"
@@ -49,9 +49,9 @@ export default function OQueFazemos() {
         </Typography>
         <div className={styles.cards}>
           <Card
-            image="/antonio.jpg"
-            title={"Antonio Álvaro"}
-            content={"Diretor de Educação e Inovação"}
+            image="/Paulo.png"
+            title={"Paulo Presse"}
+            content={"Coordenador da área de Estudos de Mercado da Hoper Educação"}
           />
           <Card
             image="/cibele.png"

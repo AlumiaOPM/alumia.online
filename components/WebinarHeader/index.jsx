@@ -54,7 +54,7 @@ export default function FirstSection() {
     }
 
     try {                                                                                       
-      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/df425ee5-2a7c-4471-bcab-8e4858de22df", {
+      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/0708b79c-ee0a-46f4-9b32-23446ea5fc77", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
@@ -67,7 +67,7 @@ export default function FirstSection() {
         setLoading(false);
         setSuccess(true);
         store.dispatch({ type: "closePopup" });
-        return router.push('https://f.hubspotusercontent00.net/hubfs/6331207/webinar%20alumia%20V2%20-%20c%C3%B3pia%202.pdf');
+        return router.push('https://alumia.online/obrigado');
       } else {
         console.log(response)
         setLoading(false);
@@ -91,13 +91,18 @@ export default function FirstSection() {
               component="h2"
               variant="h4"
               style={{ color: "#f1f1f1", fontWeight: '800' }}>
-              [ WEBINAR ] <br/> Como Escalar Rapidamente um Programa <span style={{ color: "#F15A22" }}>EAD</span>
+              [ WEBINAR ] <br/> O Mercado <span style={{ color: "#F15A22" }}>EAD</span> em Números
             </Typography>
             <Typography
               component="h3"
               variant="h5"
+              style={{ color: "#f1f1f1", fontWeight: '800' }}>
+              Data: <span style={{ color: "#F15A22" }}>13/04</span> <br/>Horário: <span style={{ color: "#F15A22" }}>15:00</span>
+            </Typography>
+            <Typography
+              component="p"
               style={{ color: '#f1f1f1' }}>
-              Quer baixar a apresentação? Preencha o formulário ao lado.
+              Nosso webinar "O Mercado EAD em Números" irá apresentar os cursos mais vendidos nesse ramo, os principais players, faturamentos estimados e te mostrar todo o potencial de crescimento dentro deste mercado. Você não pode perder!
             </Typography>
             
           </div>
