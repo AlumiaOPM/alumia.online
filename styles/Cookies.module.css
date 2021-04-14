@@ -1,0 +1,32 @@
+.containerPoliticaDeCookies {
+  background: linear-gradient(50deg, #1a4b5a, #1a5a4f);
+  color: #FDFAFE;
+}
+
+.politicaDeCookies {
+  padding: 100px 0px 20px 0px;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.politicaDeCookies p {
+  margin: 10px auto;
+}
+
+.politicaDeCookies ul {
+  padding: 10px;
+}
+
+.politicaDeCookies ul li {
+  margin: 10px auto;
+}
+
+.politicaDeCookies h3 {
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 767px){
+  .politicaDeCookies {
+    padding: 100px 10px 20px 10px;
+  }
+}

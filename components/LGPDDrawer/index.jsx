@@ -45,7 +45,7 @@ export default function LGPDDrawer() {
 
           <div className={styles.flexItem}>
             <Typography component="p">
-              Usamos cookies para armazenar informações sobre como você usa o nosso site e as páginas que visita. Tudo para tornar sua experiência a mais agradável possível. Para entender os tipos de cookies que utilizamos, acesse nossa <Link href="#">política de cookies</Link>. Ao clicar em Eu concordo, você consente com a utilização de cookies.
+              Usamos cookies para armazenar informações sobre como você usa o nosso site e as páginas que visita. Tudo para tornar sua experiência a mais agradável possível. Para entender os tipos de cookies que utilizamos, acesse nossa <Link href="/politica-de-cookies" target="_blank">política de cookies</Link>. Ao clicar em Eu concordo, você consente com a utilização de cookies.
             </Typography>
           </div>
 

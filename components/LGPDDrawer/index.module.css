@@ -6,7 +6,7 @@
   width: 100%;
   padding: 16px 10px;
   background: #FDFAFE;
-  box-shadow: -20px 10px 20px 10px rgba(0,0,0,.3);
+  box-shadow: -20px 10px 10px 10px rgba(0,0,0,.3);
   transition: all 0.4s ease;
   z-index: 2;
 }
