@@ -25,7 +25,7 @@ export default function PoliticaDeCookies() {
             Prezado Usuário,
           </Typography>
           <h3>Política de Privacidade e Segurança</h3>
-          <p>Este documento é parte integrante dos nossos Termos de Us, que regularão todos os serviços de cursos online oferecidos pela Alumia.A presente política tem por finalidade estabelecer as regras de tratamento dos seus dados coletados, além de deixar claro o compromisso da Alumia. em garantir a proteção dos dados solicitados, em conformidade com a legislação aplicável, destinada aos seguintes domínios: https://alumia.online e todos os seus subdomínios.</p>
+          <p>Este documento é parte integrante dos nossos Termos de Uso, que regularão todos os serviços de cursos online oferecidos pela Alumia.A presente política tem por finalidade estabelecer as regras de tratamento dos seus dados coletados, além de deixar claro o compromisso da Alumia. em garantir a proteção dos dados solicitados, em conformidade com a legislação aplicável, destinada aos seguintes domínios: https://alumia.online e todos os seus subdomínios.</p>
 
           <p>Quando você navega em nosso site e toma conhecimento de nossa Política de Privacidade confere sua livre e expressa concordância com os termos aqui estipulados.</p>
 
@@ -84,12 +84,12 @@ export default function PoliticaDeCookies() {
           </ol>
           <span>Os cookies, quanto a sua finalidade, podem ser:</span>
           <ol>
-            <li>Cookies necessários:<span>são cookies essenciais que possibilitam a navegação em nossas aplicações e o acesso a todos os recursos; sem estes, nossos serviços podem apresentar mau desempenho ou não funcionar. São geralmente de Sessão e Próprios.</span></li>
-            <li>Cookies de desempenho:<span>são cookies que otimizam a forma que nossas aplicações funcionam, coletando informações anônimas sobre as páginas acessadas. São geralmente próprios.</span></li>
-            <li>Cookies de funcionalidade:<span>são cookies que memorizam suas preferências e escolhas (como seu nome de usuário). São geralmente próprios e permanentes.</span></li>
-            <li>Cookies de publicidade:<span>são cookies que direcionam anúncios em função dos seus interesses e limitam a quantidade de vezes que o anúncio aparece. São geralmente permanentes e podem ser de terceiros.</span></li>
-            <li>Cookies de mídias sociai<span>: permitem que você se conecte com mídias sociais, tais como LinkedIn, Twitter, Facebook e Instagram. São geralmente permanentes e de Terceiros.</span></li>
-            <li>Cookies de seguranç<span>: nos ajudam a monitorar atividades fraudulentas e proteger os seus dados em acessos não autorizados. São geralmente permanentes e de Terceiros.</span></li>
+            <li>Cookies necessários são cookies essenciais que possibilitam a navegação em nossas aplicações e o acesso a todos os recursos; sem estes, nossos serviços podem apresentar mau desempenho ou não funcionar. São geralmente de Sessão e Próprios.</li>
+            <li>Cookies de desempenho são cookies que otimizam a forma que nossas aplicações funcionam, coletando informações anônimas sobre as páginas acessadas. São geralmente próprios.</li>
+            <li>Cookies de funcionalidade são cookies que memorizam suas preferências e escolhas (como seu nome de usuário). São geralmente próprios e permanentes.</li>
+            <li>Cookies de publicidade são cookies que direcionam anúncios em função dos seus interesses e limitam a quantidade de vezes que o anúncio aparece. São geralmente permanentes e podem ser de terceiros.</li>
+            <li>Cookies de mídias sociai permitem que você se conecte com mídias sociais, tais como LinkedIn, Twitter, Facebook e Instagram. São geralmente permanentes e de Terceiros.</li>
+            <li>Cookies de segurança nos ajudam a monitorar atividades fraudulentas e proteger os seus dados em acessos não autorizados. São geralmente permanentes e de Terceiros.</li>
           </ol>
           <p>Gerenciamento de cookies</p>
 
@@ -120,15 +120,15 @@ export default function PoliticaDeCookies() {
           </ul>
 
           <ul>
-            <li>2.2 O uso, acesso e compartilhamento da base de dados formada nos termos da presente Política de Privacidade serão feitos dentro dos limites e propósitos das atividades da Alumia, podendo ser fornecidas e disponibilizadas para acesso e/ou consulta para as empresas parceiros de negócios, fornecedores, prestadores de serviço, subcontratados, autoridades ou terceiros em geral, desde que obedecido o disposto na presente Política de Privacidade, na Legislação Aplicável ou por determinação judicial.</li>
+            <li>2.2 O uso, acesso e compartilhamento da base de dados formada nos termos da presente Política de Privacidade serão feitos dentro dos limites e propósitos das atividades da Alumia, podendo ser fornecidas e disponibilizadas para acesso e/ou consulta para as empresas parceiras de negócios, fornecedores, prestadores de serviço, subcontratados, autoridades ou terceiros em geral, desde que obedecido o disposto na presente Política de Privacidade, na Legislação Aplicável ou por determinação judicial.</li>
           </ul>
 
           <ul>
-            <li>2.3 A Alumia se compromete a resguardar o seu sigilo ﬁnanceiro e bancário através do não compartilhamento dessas informações com empresas com as quais você não tenha concordado. Você reconhece que a Alumia é obrigada a atender uma série de obrigações legais em decorrência da legislação aplicável relacionadas com a identidade de seus clientes e a origem dos fundos que opera.</li>
+            <li>2.3 A Alumia se compromete a resguardar o seu sigilo financeiro e bancário através do não compartilhamento dessas informações com empresas com as quais você não tenha concordado. Você reconhece que a Alumia é obrigada a atender uma série de obrigações legais em decorrência da legislação aplicável relacionadas com a identidade de seus clientes e a origem dos fundos que opera.</li>
           </ul>
 
           <ul>
-            <li>2.4 Lembramos que você é responsável pelo sigilo, utilização e todos os atos no uso das Credenciais (tais como, mas não limitados a, login, senha e token de autenticação). Caso você identiﬁque ou desconﬁe que um terceiro tenha acesso à sua senha, deverá alterar diretamente nos sistemas ou serviços, ou nos solicitar auxílio por meio do telefone da Alumia. Lembre-se que o compartilhamento de Credenciais decorrente de sua ação conﬁgura um risco a segurança da sua informação e violação a esta Política de Privacidade.</li>
+            <li>2.4 Lembramos que você é responsável pelo sigilo, utilização e todos os atos no uso das Credenciais (tais como, mas não limitados a, login, senha e token de autenticação). Caso você identiﬁque ou desconfie que um terceiro tenha acesso à sua senha, deverá alterar diretamente nos sistemas ou serviços, ou nos solicitar auxílio por meio do telefone da Alumia. Lembre-se que o compartilhamento de Credenciais decorrente de sua ação conﬁgura um risco a segurança da sua informação e violação a esta Política de Privacidade.</li>
           </ul>
 
           <ul>
