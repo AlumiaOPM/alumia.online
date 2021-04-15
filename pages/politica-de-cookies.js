@@ -98,7 +98,7 @@ export default function PoliticaDeCookies() {
           <p>Em nosso site, na primeira vez que você acessar nossas aplicações, será requerida a sua concordância com a instalação destes. Apenas após a sua aceitação eles serão ativados.</p>
 
           <p>As opções para desativar ou limpar os cookies estão presentes em todos os navegadores de internet, acessíveis em “Opções” ou em “Preferências”. Dessa forma, para esclarecer melhor como proceder, consulte as opções de ajuda e configuração do navegador utilizado:  </p>
-          <h3>2. Uso dos dado</h3>
+          <h3>2. Uso dos dados</h3>
           <p>Os dados poderão ser acessados pela Alumia, parceiros, subcontratados e autoridades, de forma a possibilitar as funcionalidades dos nossos sites/aplicativos e os produtos e serviços por nós ofertados, ou mediante requisição de autoridades públicas nos moldes da legislação. Lembre-se, caso você acesse funcionalidades ou sites de parceiros, estará em outro ambiente e sujeito às práticas e políticas próprias desses parceiros.</p>
 
           <ul>
