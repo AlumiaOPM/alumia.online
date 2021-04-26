@@ -1,7 +1,6 @@
 import Logo from '../Logo';
 
 import { MdMail } from 'react-icons/md';
-import { FaWhatsapp } from 'react-icons/fa';
 import styles from './index.module.css';
 import { Typography } from '@material-ui/core';
 

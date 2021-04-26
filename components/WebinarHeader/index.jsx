@@ -1,12 +1,24 @@
 import React from 'react';
 import { useRouter } from 'next/router'
+
 import Container from '../Container';
 import Section from '../Section';
-import {  TextField,  Grid,  Button,  Typography,  CircularProgress,  Collapse,  IconButton} from '@material-ui/core';
-import Alert from '@material-ui/lab/Alert';
+
+import {
+  TextField,
+  Grid,
+  Button,
+  Typography,
+  CircularProgress,
+  Collapse,
+  IconButton
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
 import { Close } from '@material-ui/icons';
+import { AlertTitle, Alert } from '@material-ui/lab';
+
 import store from '../../src/store';
-import { AlertTitle } from '@material-ui/lab';
 import styles from './index.module.css';
 
 export default function FirstSection() {
@@ -17,6 +29,7 @@ export default function FirstSection() {
   const [fields, setFields] = React.useState({})
   const [isPageFullyLoaded, setisPageFullyLoaded] = React.useState(false);
   const router = useRouter();
+
   React.useEffect(() => {
     window.onload = () => setisPageFullyLoaded(true)
   }, [])
@@ -53,8 +66,8 @@ export default function FirstSection() {
       ]
     }
 
-    try {                                                                                       
-      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/0708b79c-ee0a-46f4-9b32-23446ea5fc77", {
+    try {
+      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/20233314-fcf5-441a-90cd-e3472798b4f2", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
@@ -82,94 +95,152 @@ export default function FirstSection() {
     }
   }
 
+  const useStyles = makeStyles((theme) => ({
+    input: {
+      '&::active': {
+        fontSize: '40px !important',
+      }
+    }
+  }))
+
+  const classes = useStyles();
+
   return (
     <div className={styles.webnarHeader}>
       <Container>
         <Section>
           <div className={styles.sectionItem}>
             <Typography
+              component="h4"
+              variant="h4"
+              style={{
+                color: "#f1f1f1",
+                fontWeight: 800
+              }}
+            >
+              [ WEBINAR ]
+            </Typography>
+            <Typography
               component="h2"
               variant="h4"
-              style={{ color: "#f1f1f1", fontWeight: '800' }}>
-              [ WEBINAR ] <br/> O Mercado <span style={{ color: "#F15A22" }}>EAD</span> em Números
+              style={{
+                color: "#f1f1f1",
+                fontWeight: '800',
+                margin: "20px auto"
+              }}>
+              Como realizar a<br /> <span style={{ color: "#F15A22" }}>transformação digital</span> nas instituições de ensino
             </Typography>
             <Typography
               component="h3"
               variant="h5"
-              style={{ color: "#f1f1f1", fontWeight: '800' }}>
-              Data: <span style={{ color: "#F15A22" }}>13/04</span> <br/>Horário: <span style={{ color: "#F15A22" }}>15:00</span>
+              style={{
+                color: "#f1f1f1",
+                fontWeight: '800'
+              }}
+            >
+              Data: <span style={{ color: "#F15A22" }}>11/05</span> <br />Horário: <span style={{ color: "#F15A22" }}>15:00</span>
             </Typography>
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Nosso webinar "O Mercado EAD em Números" irá apresentar os cursos mais vendidos nesse ramo, os principais players, faturamentos estimados e te mostrar todo o potencial de crescimento dentro deste mercado. Você não pode perder!
+              Vimos diversas escolas e instituições de ensino migrarem para o EAD antes mesmo de possuírem um preparo adequado para isso, por conta da realidade que ainda estamos enfrentando. Mas você sabe de fato as melhores estratégias para a sua Instituição migrar com tudo para a transformação digital e manter-se mesmo após a volta do presencial?
             </Typography>
-            
+            <Typography
+              component="p"
+              style={{ color: '#f1f1f1' }}>
+              Para conversar sobre esse grande nicho em potencial convidamos dois grandes especialistas, Cibele Schuelter, Diretora de Novos Negócios da Alumia e Jeferson Pandolfo, Diretor de Educação Digital da Unicarioca, CRO na InterEDtech e Consultor da Hoper.
+            </Typography>
+            <Typography
+              component="p"
+              style={{ color: '#f1f1f1' }}>
+              Nosso webinar “Como realizar a transformação digital nas instituições de ensino” acontecerá dia 11/5 (terça-feira) às 15h pelo nosso no youtube e você não pode perdê-lo!
+            </Typography>
+
           </div>
 
           <div className={styles.sectionForms}>
-          <form onSubmit={handleSubmit}>
-            <Grid container spacing={0}>
-              <Grid item xs={12}>
-                <TextField
-                  type="text"
-                  label="Nome completo"
-                  fullWidth
-                  variant="outlined"
-                  margin="dense"
-                  onChange={handleChange}
-                  name="nome_completo"
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  type="email"
-                  label="E-mail"
-                  fullWidth
-                  variant="outlined"
-                  margin="dense"
-                  onChange={handleChange}
-                  name="email"
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  type="cargo"
-                  label="Cargo"
-                  fullWidth
-                  variant="outlined"
-                  margin="dense"
-                  onChange={handleChange}
-                  name="cargo"
-                  required
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  type="text"
-                  label="Telefone"
-                  fullWidth
-                  variant="outlined"
-                  margin="dense"
-                  onChange={handleChange}
-                  name="mobilephone"
-                  required
-                />
-              </Grid>
-              
-              <Grid item xs={12} style={{ margin: '10px auto' }}>
-                <Button disabled={loading} color="primary" type="submit" variant="contained" fullWidth style={{ position: 'relative' }}>ENVIAR
-              {loading && <CircularProgress size={24} style={{
-                    position: 'absolute',
-                    left: '50%', color: '#11333D'
-                  }} />}
-                </Button>
-              </Grid>
+            <form onSubmit={handleSubmit}>
+              <Grid container spacing={0}>
+                <Grid item xs={12}>
+                  <TextField
+                    type="text"
+                    label="Nome completo"
+                    fullWidth
+                    variant="outlined"
+                    margin="dense"
+                    onChange={handleChange}
+                    name="nome_completo"
+                    required
+                    className={classes.input}
+                    style={{
+                      fontSize: "30px"
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    type="email"
+                    label="E-mail"
+                    fullWidth
+                    variant="outlined"
+                    margin="dense"
+                    onChange={handleChange}
+                    name="email"
+                    required
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    type="cargo"
+                    label="Cargo"
+                    fullWidth
+                    variant="outlined"
+                    margin="dense"
+                    onChange={handleChange}
+                    name="cargo"
+                    required
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    type="text"
+                    label="Telefone"
+                    fullWidth
+                    variant="outlined"
+                    margin="dense"
+                    onChange={handleChange}
+                    name="mobilephone"
+                    required
+                  />
+                </Grid>
 
-            </Grid>
-          </form>
+                <Grid item xs={12} style={{ margin: '10px auto' }}>
+                  <Button
+                    disabled={loading}
+                    color="primary"
+                    type="submit"
+                    variant="contained"
+                    fullWidth
+                    style={{
+                      position: 'relative'
+                    }}
+                  >
+                    ENVIAR
+                    {loading &&
+                      <CircularProgress
+                        size={24}
+                        style={{
+                          position: 'absolute',
+                          left: '50%',
+                          color: '#11333D'
+                        }}
+                      />
+                    }
+                  </Button>
+                </Grid>
+
+              </Grid>
+            </form>
           </div>
         </Section>
 
@@ -186,7 +257,7 @@ export default function FirstSection() {
                 setSuccess(false);
               }}
             >
-              <Close fontSize="inherit"/>
+              <Close fontSize="inherit" />
             </IconButton>
           }
         >

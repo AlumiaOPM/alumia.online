@@ -7,17 +7,17 @@ import styles from './index.module.css';
 
 export default function OQueFazemos() {
 
-  const Card = props => (
+  const Card = ({ image, title, content }) => (
     <div className={styles.card}>
       <Avatar
         style={{
-          margin: "20px 0",
+          margin: "40px 0px",
           width: '150px',
           height: "150px",
           fontSize: "30px"
         }}
         variant="circular"
-        src={props.image}
+        src={image}
       >
       </Avatar>
       <Typography
@@ -25,13 +25,13 @@ export default function OQueFazemos() {
         variant="h5"
         color="secondary"
       >
-        {props.title}
+        {title}
       </Typography>
       <Typography
         color="secondary"
         component="p"
       >
-        {props.content}
+        {content}
       </Typography>
     </div>
   )
@@ -49,14 +49,14 @@ export default function OQueFazemos() {
         </Typography>
         <div className={styles.cards}>
           <Card
-            image="/Paulo.png"
-            title={"Paulo Presse"}
-            content={"Coordenador da área de Estudos de Mercado da Hoper Educação"}
+            image="/jeferson.jpg"
+            title={"Jeferson Pandolfo"}
+            content={<p>Diretor de Educação Digital da Unicarioca, <br/>CRO na InterEDtech e Consultor da Hoper</p>}
           />
           <Card
             image="/cibele.png"
             title={"Cibele Schuelter"}
-            content={"Diretora de Novos Negócios"}
+            content={"Diretora de Novos Negócios da Alumia"}
           />
         </div>
       </Container>

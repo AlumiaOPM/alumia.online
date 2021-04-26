@@ -2,12 +2,11 @@
   z-index: 2;
   position: relative;
   background: url('/bg.jpg');
-  padding:20px;
+  padding:40px 0px;
   padding-top: 100px;
   background-size: 64%;
   background-repeat: no-repeat;
   background-position-x: right;
-  height: 500px;
   display: flex;
   align-items: center;
 }
@@ -30,7 +29,7 @@
 }
 
 .sectionItem p{
-  margin: 40px auto;
+  margin: 10px auto;
   font-family: "Roboto";
 }
 
@@ -71,9 +70,14 @@
 .sectionForms fieldset{
  border-color: #f1f1f173;
 }
-.sectionForms input:placeholder {
-  border-color: #fff;
+.sectionForms input::placeholder {
+  border-color: #f1f1f1;
 }
+
+.sectionForms label {
+  color: #f1f1f1;
+}
+
 .successMessage,
 .failedMessage {
   position: fixed;

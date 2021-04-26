@@ -2,7 +2,7 @@
   background: url('/bg-oquefazemos.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: 40px 20px;
   position: relative;
   z-index: 1;
 }
@@ -37,6 +37,7 @@
 
 .card p {
   font-family: "Roboto";
+  margin-top: 2px;
 }
 
 .card button {
