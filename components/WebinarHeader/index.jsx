@@ -52,22 +52,22 @@ export default function FirstSection() {
           "value": nome_completo,
         },
         {
-          "name": "cargo",
-          "value": cargo,
-        },
-        {
           "name": "email",
           "value": email,
         },
         {
           "name": "mobilephone",
           "value": mobilephone,
+        },
+        {
+          "name": "cargo",
+          "value": cargo,
         }
       ]
     }
 
     try {
-      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/20233314-fcf5-441a-90cd-e3472798b4f2", {
+      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/20233314-fcf5-441a-90cd-e3472798b4f2", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
@@ -143,17 +143,17 @@ export default function FirstSection() {
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Vimos diversas escolas e instituições de ensino migrarem para o EAD antes mesmo de possuírem um preparo adequado para isso, por conta da realidade que ainda estamos enfrentando. Mas você sabe de fato as melhores estratégias para a sua Instituição migrar com tudo para a transformação digital e manter-se mesmo após a volta do presencial?
+              Diversas Instituições de Ensino precisaram migrar ano passado para o EAD, antes mesmo de possuírem um preparo adequado para isso, por conta da realidade que ainda estamos enfrentando. Mas você sabe quais são as melhores estratégias para a sua Instituição migrar com tudo para a transformação digital e manter-se mesmo após a volta do presencial?
             </Typography>
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Para conversar sobre esse grande nicho em potencial convidamos dois grandes especialistas, Cibele Schuelter, Diretora de Novos Negócios da Alumia e Jeferson Pandolfo, Diretor de Educação Digital da Unicarioca, CRO na InterEDtech e Consultor da Hoper.
+              Para conversar sobre esse mercado em potencial convidamos grandes especialistas, Cibele Schuelter, Diretora de Novos Negócios da Alumia e Jeferson Pandolfo, Diretor de Educação Digital da Unicarioca, CRO na InterEDtech e Consultor da Hoper.
             </Typography>
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Nosso webinar “Como realizar a transformação digital nas instituições de ensino” acontecerá dia 11/5 (terça-feira) às 15h pelo nosso no youtube e você não pode perdê-lo!
+              Nosso webinar “Como realizar a transformação digital nas instituições de ensino” acontecerá dia 11/5  às 15h pelo nosso no Youtube e você não pode perdê-lo!
             </Typography>
 
           </div>
