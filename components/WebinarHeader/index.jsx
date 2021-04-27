@@ -153,7 +153,7 @@ export default function FirstSection() {
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Nosso webinar “Como realizar a transformação digital nas instituições de ensino” acontecerá dia 11/5  às 15h pelo nosso no Youtube e você não pode perdê-lo!
+              Nosso webinar “Como realizar a transformação digital nas instituições de ensino” acontecerá dia 11/5  às 15h pelo nosso canal no Youtube e você não pode perdê-lo!
             </Typography>
 
           </div>
