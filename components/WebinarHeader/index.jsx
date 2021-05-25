@@ -128,7 +128,7 @@ export default function FirstSection() {
                 fontWeight: '800',
                 margin: "20px auto"
               }}>
-              Como realizar a<br /> <span style={{ color: "#F15A22" }}>transformação digital</span> nas instituições de ensino
+              O Novo <br /> <span style={{ color: "#F15A22" }}>Perfil</span> dos Ingressantes no Ensino Superior
             </Typography>
             <Typography
               component="h3"
@@ -138,22 +138,22 @@ export default function FirstSection() {
                 fontWeight: '800'
               }}
             >
-              Data: <span style={{ color: "#F15A22" }}>11/05</span> <br />Horário: <span style={{ color: "#F15A22" }}>15:00</span>
+              Data: <span style={{ color: "#F15A22" }}>01/06</span> <br />Horário: <span style={{ color: "#F15A22" }}>15:00</span>
             </Typography>
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Diversas Instituições de Ensino precisaram migrar ano passado para o EAD, antes mesmo de possuírem um preparo adequado para isso, por conta da realidade que ainda estamos enfrentando. Mas você sabe quais são as melhores estratégias para a sua Instituição migrar com tudo para a transformação digital e manter-se mesmo após a volta do presencial?
+              Uma nova proposta de ensino está caminhando para a implementação em todas as universidades do Brasil.O tradicional está se tornando ultrapassado e abrindo espaço para novas propostas expressivas que prometem dar maior protagonismo ao aluno na realização de seus projetos de vida pessoal e profissional.
             </Typography>
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Para conversar sobre esse mercado em potencial convidamos grandes especialistas, Cibele Schuelter, Diretora de Novos Negócios da Alumia e Jeferson Pandolfo, Diretor de Educação Digital da Unicarioca, CRO na InterEDtech e Consultor da Hoper.
+              Para essas grandes mudanças continuarem a acontecer é necessário um ponto de partida inicial: entender o novo perfil desses alunos. Para conversarmos sobre isso, analisarmos possíveis propostas e como colocá-las em prática juntamente com os professores, convidamos dois grandes especialistas sobre o tema:
             </Typography>
             <Typography
               component="p"
               style={{ color: '#f1f1f1' }}>
-              Nosso webinar “Como realizar a transformação digital nas instituições de ensino” acontecerá dia 11/5  às 15h pelo nosso canal no Youtube e você não pode perdê-lo!
+             Cibele Schuelter, Diretora de Novos Negócios da Alumia e João Vianney, Sócio e Consultor na área de Ensino a Distância da Hoper Educação, além de Membro de comissões verificadoras e assessoras de educação a distância da Secretaria de Ensino Superior do MEC.
             </Typography>
 
           </div>
