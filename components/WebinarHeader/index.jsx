@@ -67,7 +67,7 @@ export default function FirstSection() {
     }
 
     try {
-      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/20233314-fcf5-441a-90cd-e3472798b4f2", {
+      const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/6331207/3dfcbc9d-0512-4819-ba37-92739a1c1e30", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
@@ -128,7 +128,7 @@ export default function FirstSection() {
                 fontWeight: '800',
                 margin: "20px auto"
               }}>
-              O Novo <br /> <span style={{ color: "#F15A22" }}>Perfil</span> dos Ingressantes no Ensino Superior
+              O Novo <span style={{ color: "#F15A22" }}>Perfil</span> dos <br /> Ingressantes no Ensino Superior
             </Typography>
             <Typography
               component="h3"
