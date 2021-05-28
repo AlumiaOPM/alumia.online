@@ -36,7 +36,7 @@ export default function Obrigado() {
 					component="h5"
 					variant="h6"
 					style={{ color: "#f1f1f1", fontWeight: '800' }}>
-					Dia 11/05 você receberá o link de acesso para o nosso webinar, vamos juntos?
+					Dia 01/06 você receberá o link de acesso para o nosso webinar, vamos juntos?
         </Typography>
 			</div>
 
