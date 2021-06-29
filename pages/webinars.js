@@ -33,7 +33,8 @@ export const getStaticProps = async () => {
     return {
       props: {
         webinars: data.values
-      }
+      },
+      revalidate: 1
     };
   } catch (error) {
     throw error;
