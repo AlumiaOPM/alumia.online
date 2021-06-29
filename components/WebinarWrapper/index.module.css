@@ -1,0 +1,9 @@
+.webinarWrapper {
+  padding-top: 120px;
+}
+
+.flexSection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
