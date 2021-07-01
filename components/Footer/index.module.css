@@ -1,17 +1,28 @@
 .footer {
   background: #FDFAFE;
+  min-height: 50px;
+  padding: 10px;
+}
+
+.footerWrapper {
+  background: #FDFAFE;
   display: flex;
-  justify-content: spaceflex;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px;
+  justify-content: space-between;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px auto;
+  display: grid;
+  place-items: center;
+  position: relative;
+  min-height: 44px;
+}
+
+.logo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: 26px;
 }
 
 .containerMedia {

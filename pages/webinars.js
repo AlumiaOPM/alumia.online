@@ -13,7 +13,7 @@ export default function Webinars({ webinars }) {
         <link rel="icon" href="/favicon.png" />
         <title>Webinars</title>
         <meta name="title" content="Webinars" />
-        <meta name="description" content="Como realizar a transformação digital nas instituições de ensino" />
+        <meta name="description" content="Fique por dentro de nossos webinars!" />
 
       </Head>
       <Header />

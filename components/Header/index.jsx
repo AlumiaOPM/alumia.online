@@ -20,16 +20,14 @@ import styles from './index.module.css';
 
 export default function Header(props) {
   const [isDrawerOpened, setIsDrawerOpened] = React.useState(false);
-  const [isHeaderSmall, setIfIsHeaderSmall] = React.useState(false);
 
   return (
-    
 
     <div
       className={`${styles.header} ${styles.smallHeader}`}
     >
       <Head>
-      <meta name="google-site-verification" content="VGbDos_WLuRkjHnorNOzJQLns4yHVdKp0fPEo1p2U0E" />
+        <meta name="google-site-verification" content="VGbDos_WLuRkjHnorNOzJQLns4yHVdKp0fPEo1p2U0E" />
       </Head>
 
       <Container className={styles.container}>
@@ -82,11 +80,11 @@ export default function Header(props) {
                   <ListItemText primary="Quem somos" />
                 </ListItem>
               </Link>
-              <a 
-                href="https://jobs.kenoby.com/alumia" 
-                target="_blank" 
+              <a
+                href="https://jobs.kenoby.com/alumia"
+                target="_blank"
                 style={{
-                  textDecoration:'none',
+                  textDecoration: 'none',
                   color: '#333'
                 }}
               >

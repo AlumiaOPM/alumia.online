@@ -20,11 +20,12 @@ export default function WebinarWrapper({ webinars }) {
 
   // Remove first object of array (metadata)
   formattedWebinars.shift();
+
   return (
     <div className={styles.webinarWrapper}>
       <Container>
-        <Typography component="h5" variant="h5" style={{fontWeight: "600"}}>
-          Fique por dentro de nossos <span style={{ color: "#F15A22" }}>webinars</span>!
+        <Typography component="h4" variant="h4" className={styles.title}>
+          Fique por dentro de nossos <span style={{ color: "#F15A22" }}>webinars!</span>
         </Typography>
         <div className={styles.flexSection}>
           {formattedWebinars && formattedWebinars.map(item => (
