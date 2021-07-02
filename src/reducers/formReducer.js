@@ -1,5 +1,5 @@
 
-export default function reducer(state = false, action){
+export default function formReducer(state = false, action){
   switch (action.type){
     case "openPopup":
       return state = true;

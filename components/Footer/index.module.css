@@ -39,12 +39,12 @@
 }
 
 @media screen and (max-width: 800px){
-  .footer {
+  .footerWrapper {
     flex-direction: column;
     padding: 20px;
   }
 
   .containerMedia {
-    flex-direction: column;
+    text-align: center;
   }
 }

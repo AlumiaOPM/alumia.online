@@ -8,6 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import store from '../../src/store';
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -31,31 +33,41 @@ export default function WebinarCard({ data }) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} variant="elevation">
-      <a href={data.link} target="_blank" style={{color: '#333', textDecoration: "none"}}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={data.image}
-            title={data.nome}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2" >
-              {data.nome}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              {data.data}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-          <a href={data.link} target="_blank" style={{color: "#F15A22",textDecoration: "none"}}>
-            Assistir agora
-          </a>
-          </Button>
-        </CardActions>
-      </a>
+    <Card
+      className={classes.root}
+      variant="elevation"
+      onClick={e => store.dispatch({
+        type: "open",
+        data: data,
+      })}
+    >
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={data.image}
+          title={data.nome}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2" >
+            {data.nome}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {data.data}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button
+          size="small"
+          color="primary"
+          onClick={e => store.dispatch({
+            type: "open",
+            data: data,
+          })}
+        >
+          Assistir agora
+        </Button>
+      </CardActions>
     </Card>
   );
 }

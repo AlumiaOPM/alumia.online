@@ -29,7 +29,10 @@ export default function WebinarWrapper({ webinars }) {
         </Typography>
         <div className={styles.flexSection}>
           {formattedWebinars && formattedWebinars.map(item => (
-            <WebinarCard data={item} key={item.id} />
+            <WebinarCard 
+              data={item} 
+              key={item.id} 
+            />
           ))}
         </div>
       </Container>

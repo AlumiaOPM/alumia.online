@@ -20,5 +20,6 @@
 @media screen and (max-width: 767px){
   .webinarWrapper {
     padding: 120px 10px 0px 10px;
+    background-position: top right;
   }
 }

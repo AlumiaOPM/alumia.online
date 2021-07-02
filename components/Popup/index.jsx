@@ -13,22 +13,22 @@ export default function Popup(props) {
   const [loading, setLoading] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
   const [failed, setFailed] = React.useState(false);
-  const [isOpen, setIsOpen] = React.useState(store.getState());
+  const [isOpen, setIsOpen] = React.useState(store.getState().form);
   const [fields, setFields] = React.useState({})
   const [isPageFullyLoaded, setisPageFullyLoaded] = React.useState(false);
 
   React.useEffect(() => {
     window.onload = () => setisPageFullyLoaded(true)
-  }, [])
+  }, []);
 
   store.subscribe(() => {
     setIsOpen(!isOpen)
-  })
+  });
 
   const handleChange = event => {
     const { name, value } = event.target;
     setFields({ ...fields, [name]: value })
-  }
+  };
 
   const handleSubmit = async event => {
     setLoading(true);

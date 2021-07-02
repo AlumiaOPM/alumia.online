@@ -1,9 +1,9 @@
 import Head from 'next/head';
 
 import Header from '../components/Header';
-import Footer from '../components/Footer';
-
 import WebinarWrapper from '../components/WebinarWrapper';
+import WebinarModal from '../components/WebinarModal';
+import Footer from '../components/Footer';
 
 export default function Webinars({ webinars }) {
 
@@ -19,7 +19,7 @@ export default function Webinars({ webinars }) {
       <Header />
 
       <WebinarWrapper webinars={webinars && webinars}/>
-
+      <WebinarModal />
       <Footer />
     </div>
   );
