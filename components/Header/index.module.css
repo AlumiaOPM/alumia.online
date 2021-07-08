@@ -48,7 +48,7 @@
 
 /* MENU DESKTOP */
 .header .menuDesktop {
-  min-width: 600px;
+  min-width: 780px;
   display: flex;
   justify-content: space-around;
 }

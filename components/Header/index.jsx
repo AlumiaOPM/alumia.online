@@ -48,6 +48,9 @@ export default function Header(props) {
             <Link href={"/quem-somos"}>
               quem somos
             </Link>
+            <Link href={"/webinars"}>
+              webinars
+            </Link>
             <a
               href="https://jobs.kenoby.com/alumia"
               target="_blank"
@@ -78,6 +81,11 @@ export default function Header(props) {
               <Link href="/quem-somos">
                 <ListItem button>
                   <ListItemText primary="Quem somos" />
+                </ListItem>
+              </Link>
+              <Link href="/webinars">
+                <ListItem button>
+                  <ListItemText primary="Webinars" />
                 </ListItem>
               </Link>
               <a
