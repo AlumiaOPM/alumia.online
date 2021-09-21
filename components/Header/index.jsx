@@ -55,6 +55,9 @@ export default function Header(props) {
               href="https://jobs.kenoby.com/alumia"
               target="_blank"
             >trabalhe conosco</a>
+            <a href="https://empresas.alumia.online/" target="_blank">
+             Para empresas
+              </a>
             <a
               onClick={() => store.dispatch({ type: "openPopup" })}
             >contato</a>
@@ -103,6 +106,11 @@ export default function Header(props) {
               <a onClick={() => store.dispatch({ type: "openPopup" })}>
                 <ListItem button>
                   <ListItemText primary="Contato" />
+                </ListItem>
+              </a>
+              <a href="https://empresas.alumia.online/">
+              <ListItem button>
+                  <ListItemText primary="Para empresas" />
                 </ListItem>
               </a>
             </List>
