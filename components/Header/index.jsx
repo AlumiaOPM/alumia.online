@@ -56,7 +56,7 @@ export default function Header(props) {
               target="_blank"
             >trabalhe conosco</a>
             <a href="https://empresas.alumia.online/" target="_blank">
-             Para empresas
+             para empresas
               </a>
             <a
               onClick={() => store.dispatch({ type: "openPopup" })}
