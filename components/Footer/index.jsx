@@ -30,9 +30,19 @@ export default function Footer() {
           </div>
           <div className={styles.containerMedia}>
             <div className={styles.media}>
-              <MdMail color="primary" style={{ margin: '0px 6px 0px 0px' }} />
+              
               <Typography component="p">
+                OPM Educacional Ltda
+              </Typography>
+              <Typography component="p">
+                27.557.874/0001-09
+              </Typography>
+              <Typography component="p">
+              <MdMail color="primary" style={{ margin: '0px 6px -4px 0px' }} />
                 contato@alumia.online
+              </Typography>
+              <Typography component="p">
+              R. Des. Guimarães, 122, Água Branca - São Paulo
               </Typography>
             </div>
           </div>

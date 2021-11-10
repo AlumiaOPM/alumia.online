@@ -32,7 +32,8 @@
 
 .media {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-start;
   padding-right: 20px;
   color: #11333D;
