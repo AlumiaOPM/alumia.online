@@ -80,11 +80,11 @@ export default function Depoimentos(props) {
           image="/antonieta.png"
         />
         <TestimonialCard
-          name={"Guto Grieco"}
-          content={'" Trabalhar com a Alumia tem sido muito bom pela qualidade do atendimento, pelos valores éticos da companhia, pelo serviço completo que eles prestam e pelos resultados que nos ajudam a atingir. "'}
-          work={"Head inovação ESPM"}
+          name={"Caio Giusti"}
+          content={'" A parceria com a Alumia tem sido proveitosa em diversos sentidos, desde a qualidade/agilidade do atendimento à seriedade com que conduzem as atividades e ao valor agregado. "'}
+          work={"Gerente de Educação Continuada"}
           orientation={"left"}
-          image="/guto.png"
+          image="/caio.png"
         />
       </Container>
     </div>
