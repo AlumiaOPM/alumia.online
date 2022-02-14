@@ -11,7 +11,9 @@
 }
 
 .logo {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   place-items: center;
   position: relative;
   min-height: 44px;
@@ -23,6 +25,10 @@
   height: 100%;
   display: block;
   margin-top: 26px;
+}
+.logoCubo img{
+  width: 120px !important;
+  height: auto;
 }
 
 .containerMedia {

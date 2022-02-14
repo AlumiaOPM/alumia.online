@@ -1,4 +1,5 @@
 import Logo from '../Logo';
+import LogoCubo from '../LogoCubo';
 import Link from 'next/link';
 
 import { MdMail } from 'react-icons/md';
@@ -27,7 +28,16 @@ export default function Footer() {
                 <Logo />
               </a>
             </Link>
+            <div className={styles.logoCubo}>
+            <Link href={"/"}>
+              <a>
+                <LogoCubo />
+              </a>
+            </Link>
+            
           </div>
+          </div>
+          
           <div className={styles.containerMedia}>
             <div className={styles.media}>
               
