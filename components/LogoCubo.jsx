@@ -2,11 +2,10 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   logoCubo: {
-    display: 'flex',
+    display: 'grid',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '-50px',
-    paddingBottom:'20px'
+    marginTop: '-26px'
     
   }
 }))
