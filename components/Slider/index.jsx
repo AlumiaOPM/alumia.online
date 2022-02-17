@@ -15,8 +15,7 @@ export default class SimpleSlider extends Component {
       accessibility: true,
       slidesToShow: 3,
       slidesToScroll: 3,
-      className:'testeDivInterna',
-      className: "containerSlider",
+      
       responsive: [
         
         {
@@ -52,13 +51,13 @@ export default class SimpleSlider extends Component {
                 <img src="/parceiros/SaintLeo.png" alt="SaintLeo" title="SaintLeo" />
               </div>
               <div style={{paddingRight:"10px  !important"}} >
-                <img src="/parceiros/ESPM.png" alt="ESPM" title="ESPM" />
+                <img src="/parceiros/ESPMnw.png" alt="ESPM" title="ESPM" />
               </div>
               <div style={{paddingRight:"10px !important"}} >
                 <img src="/parceiros/sing.png" alt="Instituto Singularidades" title="Instituto Singularidades" />
               </div>
               <div style={{paddingRight:"10px !important"}} >
-                <img src="/parceiros/Fecap.png" alt="Fecap" title="Fecap" />
+                <img src="/parceiros/Fecapnw.png" alt="Fecap" title="Fecap" />
               </div>
               <div  style={{paddingRight:"10px !important"}} >
                 <img src="/parceiros/dmi.png" alt="Digital Marketing Institute" title="Digital Marketing Institute" />
