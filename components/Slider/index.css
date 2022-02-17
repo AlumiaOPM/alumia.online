@@ -1,0 +1,9 @@
+.slick-slide{
+    padding: 0 20px !important;
+}
+.slick-dots li button:before{
+    background-color: orange !important;
+}
+.teste h2{
+ text-align: center !important;
+}
