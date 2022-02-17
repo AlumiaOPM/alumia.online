@@ -7,3 +7,6 @@
 .teste h2{
  text-align: center !important;
 }
+.slick-dots ul{
+    left: -3% !important; 
+}
