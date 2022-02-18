@@ -40,7 +40,7 @@ export default class SimpleSlider extends Component {
     return (
       <>
         <div style={{width:"60%", margin: "100px auto"}} >
-          <div className="teste">
+          <div>
             <h2 style={{ textAlign: "center", paddingBottom: "100px", fontSize: "2rem", fontWeight: "600", fontFamily: "Josefin Sans" }}>Nossos parceiros</h2>
           </div>
 
