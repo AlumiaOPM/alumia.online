@@ -52,7 +52,7 @@ export default function Header(props) {
               webinars
             </Link>
             <a
-              href="https://jobs.kenoby.com/alumia"
+              href="https://carreiras.alumia.online/"
               target="_blank"
             >trabalhe conosco</a>
             <a href="https://empresas.alumia.online/" target="_blank">
