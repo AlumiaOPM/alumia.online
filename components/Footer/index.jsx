@@ -42,7 +42,7 @@ export default function Footer() {
             <div className={styles.media}>
               
               <Typography component="p">
-                OPM Educacional Ltda
+              OPM Educacional SA
               </Typography>
               <Typography component="p">
                 27.557.874/0001-09
